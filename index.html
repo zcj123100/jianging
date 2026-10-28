@@ -1,0 +1,1150 @@
+<!DOCTYPE html>
+<html lang="zh-CN" data-page-node-id="iAkKnwtG1mXqGrCZs5vXO8">
+<head data-page-node-id="T0AyS8iOe0KbEpGC5cdSmu">
+<meta charset="UTF-8" data-page-node-id="8oGaOGBKUC2t2UyNuPf0Xa">
+<meta name="viewport" content="width=device-width, initial-scale=1.0" data-page-node-id="Weet7JFdY4Ayd2yEP0Fo9h">
+<title>826 工程项目管理 · 备考手册 | 送给正在冲刺的你</title>
+<style>
+  :root{
+    --bg:#faf7f2; --card:#ffffff; --ink:#3b3226; --ink-soft:#7a6f5d;
+    --accent:#c2542e; --accent-soft:#fbe9e0; --gold:#b98a2f; --gold-soft:#faf1dd;
+    --green:#4a7c59; --green-soft:#e8f1ea;
+    --line:#eadfd0; --radius:16px;
+    --hi:#b93a2b; --hi-bg:#fdecea; --mid:#b07a13; --mid-bg:#fdf3dc; --lo:#5b7f8a; --lo-bg:#e9f2f4;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{font-family:"PingFang SC","Microsoft YaHei","Noto Sans SC",sans-serif;background:var(--bg);color:var(--ink);line-height:1.75}
+  a{color:var(--accent)}
+
+  /* ---------- nav ---------- */
+  nav{position:sticky;top:0;z-index:50;background:rgba(250,247,242,.92);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+  .nav-inner{max-width:960px;margin:0 auto;padding:10px 20px;display:flex;align-items:center;gap:18px;flex-wrap:wrap}
+  .nav-brand{font-weight:700;color:var(--accent);letter-spacing:.5px}
+  .nav-inner a{font-size:14px;color:var(--ink-soft);text-decoration:none}
+  .nav-inner a:hover{color:var(--accent)}
+
+  /* ---------- hero ---------- */
+  header{max-width:960px;margin:0 auto;padding:56px 20px 32px;text-align:center}
+  .gift-tag{display:inline-block;background:var(--gold-soft);color:var(--gold);font-size:13px;padding:4px 14px;border-radius:99px;letter-spacing:2px;margin-bottom:18px}
+  header h1{font-size:34px;letter-spacing:1px;line-height:1.3}
+  header h1 em{font-style:normal;color:var(--accent)}
+  .hero-sub{margin-top:14px;color:var(--ink-soft);font-size:15px}
+  .hero-chips{margin-top:22px;display:flex;gap:10px;justify-content:center;flex-wrap:wrap}
+  .chip{background:var(--card);border:1px solid var(--line);border-radius:99px;padding:6px 16px;font-size:13px;color:var(--ink-soft)}
+  .chip b{color:var(--ink)}
+
+  /* ---------- progress ---------- */
+  .progress-wrap{max-width:960px;margin:8px auto 0;padding:0 20px}
+  .progress-card{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:18px 22px;display:flex;align-items:center;gap:16px;flex-wrap:wrap}
+  .progress-card .label{font-size:14px;color:var(--ink-soft);white-space:nowrap}
+  .progress-card .label b{color:var(--accent);font-size:20px}
+  .bar{flex:1;min-width:200px;height:10px;background:var(--accent-soft);border-radius:99px;overflow:hidden}
+  .bar i{display:block;height:100%;width:0;background:linear-gradient(90deg,#e08b5f,var(--accent));border-radius:99px;transition:width .4s ease}
+  .reset-btn{font-size:12px;color:var(--ink-soft);background:none;border:1px solid var(--line);border-radius:8px;padding:4px 10px;cursor:pointer}
+  .reset-btn:hover{color:var(--hi);border-color:var(--hi)}
+
+  /* ---------- layout ---------- */
+  main{max-width:960px;margin:0 auto;padding:28px 20px 80px}
+  section{margin-top:44px}
+  h2{font-size:22px;display:flex;align-items:center;gap:10px;margin-bottom:6px}
+  h2 .no{font-size:13px;color:var(--accent);border:1px solid var(--accent);border-radius:6px;padding:1px 8px;font-weight:600}
+  .sec-sub{color:var(--ink-soft);font-size:14px;margin-bottom:18px}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:22px 24px;margin-bottom:16px}
+
+  /* ---------- fact table ---------- */
+  table{width:100%;border-collapse:collapse;font-size:14px}
+  th,td{text-align:left;padding:10px 12px;border-bottom:1px solid var(--line);vertical-align:top}
+  th{color:var(--ink-soft);font-weight:600;white-space:nowrap;background:#fdfaf5}
+  tr:last-child td{border-bottom:none}
+  .num{font-variant-numeric:tabular-nums}
+
+  /* ---------- tags ---------- */
+  .tag{display:inline-block;font-size:12px;border-radius:6px;padding:1px 8px;margin-right:6px;vertical-align:2px;white-space:nowrap}
+  .t-hi{color:var(--hi);background:var(--hi-bg)}
+  .t-mid{color:var(--mid);background:var(--mid-bg)}
+  .t-lo{color:var(--lo);background:var(--lo-bg)}
+  .t-main{color:var(--accent);background:var(--accent-soft)}
+  .t-aux{color:var(--ink-soft);background:#f1ece3}
+
+  /* ---------- checklist ---------- */
+  .chapter{border:1px solid var(--line);border-radius:var(--radius);background:var(--card);margin-bottom:12px;overflow:hidden}
+  .chapter summary{list-style:none;cursor:pointer;padding:16px 20px;display:flex;align-items:flex-start;gap:14px}
+  .chapter summary::-webkit-details-marker{display:none}
+  .chapter summary:hover{background:#fdfaf5}
+  .cb{flex:none;width:22px;height:22px;margin-top:3px;border:2px solid var(--accent);border-radius:7px;cursor:pointer;position:relative;background:#fff}
+  .done .cb{background:var(--accent);border-color:var(--accent)}
+  .done .cb::after{content:"✓";position:absolute;inset:0;color:#fff;font-size:14px;display:flex;align-items:center;justify-content:center}
+  .ch-title{font-weight:600}
+  .done .ch-title{color:var(--ink-soft);text-decoration:line-through;text-decoration-color:var(--accent)}
+  .ch-body{padding:0 20px 18px 56px;font-size:14px;color:var(--ink-soft)}
+  .ch-body ul{list-style:none}
+  .ch-body li{padding:3px 0 3px 18px;position:relative}
+  .ch-body li::before{content:"·";position:absolute;left:4px;color:var(--accent);font-weight:700}
+  .arrow{margin-left:auto;color:var(--line);flex:none;transition:transform .2s}
+  .chapter[open] .arrow{transform:rotate(90deg)}
+  .hint{font-size:12px;color:var(--ink-soft);margin-top:6px}
+
+  /* ---------- quiz ---------- */
+  .quiz{margin-top:16px;border-top:1px dashed var(--line);padding-top:14px}
+  .quiz-title{font-weight:700;font-size:13px;color:var(--accent);letter-spacing:1px;margin-bottom:10px}
+  .q{margin-bottom:14px}
+  .q-text{font-size:13.5px;color:var(--ink);margin-bottom:6px}
+  .opts button{display:block;width:100%;text-align:left;font-size:13px;padding:7px 12px;margin:5px 0;border:1px solid var(--line);border-radius:9px;background:#fdfaf5;cursor:pointer;font-family:inherit;color:var(--ink);line-height:1.5}
+  .opts button:hover{border-color:var(--accent)}
+  .opts button.right{border-color:var(--green);background:var(--green-soft);color:var(--green);font-weight:600}
+  .opts button.wrong{border-color:var(--hi);background:var(--hi-bg);color:var(--hi)}
+  .opts button:disabled{cursor:default}
+  .why{font-size:12.5px;color:var(--ink);background:var(--lo-bg);border-radius:8px;padding:8px 12px;margin-top:6px}
+  .reveal-btn{font-size:12.5px;color:var(--accent);background:var(--accent-soft);border:1px solid var(--accent);border-radius:8px;padding:4px 14px;cursor:pointer;font-family:inherit}
+  .model-ans{font-size:13px;color:var(--ink);background:var(--green-soft);border-radius:8px;padding:10px 12px;margin-top:8px;line-height:1.8}
+
+  /* ---------- daily checkin ---------- */
+  .checkin-area{margin-top:26px;display:flex;align-items:center;justify-content:center;gap:14px;flex-wrap:wrap}
+  .checkin-btn{font-family:inherit;font-size:16px;font-weight:600;color:#fff;background:linear-gradient(135deg,#e08b5f,var(--accent));border:none;border-radius:99px;padding:12px 34px;cursor:pointer;letter-spacing:2px;box-shadow:0 6px 18px rgba(194,84,46,.28);transition:transform .15s ease,box-shadow .15s ease}
+  .checkin-btn:hover{transform:translateY(-2px);box-shadow:0 10px 22px rgba(194,84,46,.34)}
+  .checkin-btn.done{background:var(--green-soft);color:var(--green);box-shadow:none;cursor:default}
+  .streak{font-size:14px;color:var(--ink-soft)}
+  .streak b{color:var(--accent);font-size:18px}
+  .modal-mask{position:fixed;inset:0;background:rgba(59,50,38,.45);z-index:200;display:flex;align-items:center;justify-content:center;padding:24px;opacity:0;pointer-events:none;transition:opacity .25s ease}
+  .modal-mask.show{opacity:1;pointer-events:auto}
+  .modal-card{background:var(--card);border-radius:20px;max-width:460px;width:100%;padding:36px 32px 28px;text-align:center;transform:translateY(16px) scale(.96);transition:transform .25s ease;box-shadow:0 20px 60px rgba(59,50,38,.25)}
+  .modal-mask.show .modal-card{transform:translateY(0) scale(1)}
+  .modal-card .emoji{font-size:40px}
+  .modal-card .quote{font-size:18px;line-height:1.9;margin:14px 0 6px;color:var(--ink)}
+  .modal-card .streak-line{font-size:13px;color:var(--gold);margin-top:8px;letter-spacing:1px}
+  .modal-card .close-btn{margin-top:20px;font-family:inherit;font-size:13px;color:var(--ink-soft);background:var(--bg);border:1px solid var(--line);border-radius:99px;padding:6px 24px;cursor:pointer}
+  .modal-card .close-btn:hover{color:var(--accent);border-color:var(--accent)}
+
+  /* ---------- plan timeline ---------- */
+  .plan{border-left:3px solid var(--accent-soft);margin-left:8px;padding-left:24px}
+  .plan-step{position:relative;padding-bottom:22px}
+  .plan-step::before{content:"";position:absolute;left:-31px;top:6px;width:13px;height:13px;border-radius:50%;background:var(--accent);border:3px solid var(--bg)}
+  .plan-step h4{font-size:15px}
+  .plan-step .when{font-size:12px;color:var(--accent);letter-spacing:1px}
+  .plan-step p{font-size:14px;color:var(--ink-soft);margin-top:4px}
+
+  /* ---------- note ---------- */
+  .note{background:var(--gold-soft);border:1px solid #ecdcb4;border-radius:var(--radius);padding:16px 20px;font-size:14px;color:#7a5c1e;margin-top:16px}
+  .note b{color:#8a6420}
+
+  footer{max-width:960px;margin:0 auto;padding:30px 20px 60px;text-align:center;color:var(--ink-soft);font-size:13px;border-top:1px dashed var(--line)}
+  footer .heart{color:var(--accent)}
+
+  @media (max-width:640px){
+    header h1{font-size:26px}
+    .ch-body{padding-left:20px}
+    th,td{padding:8px}
+  }
+</style>
+</head>
+<body data-page-node-id="I6McgDfPxvIh5KXZUxnr1R">
+
+<nav data-page-node-id="9Z2JVS0V6TnwfbfWEHYCYR">
+  <div class="nav-inner" data-page-node-id="TAABx5lPXTNr25gNIwNeDA">
+    <span class="nav-brand" data-page-node-id="V8Df35dm1TT708bbcK6OBI">826 备考手册</span>
+    <a href="#facts" data-page-node-id="5utJYw6ChC98gennPC9qsu">考情速览</a>
+    <a href="#outline" data-page-node-id="hPAkHpospSAHhU676mnkyB">初试大纲</a>
+    <a href="#books" data-page-node-id="ufUcoYwIBUxrHP8PYVvUe6">参考书</a>
+    <a href="#skills" data-page-node-id="LH4enVnYOuFx2vannhkVr4">题型攻略</a>
+    <a href="#tiku-embed" data-page-node-id="linkTiku" style="color:var(--accent);font-weight:600">✍ 题库</a>
+    <a href="#plan" data-page-node-id="rJxzJCtHHy6DScxevF8Aje">复习规划</a>
+    <a href="#fushi" data-page-node-id="nk05DJn3TAwqkIxJyDFaC9">复试加餐</a>
+    <a href="#links" data-page-node-id="CxAcw2OETK2ZsCPRH992rP">官方入口</a>
+  </div>
+</nav>
+
+<header data-page-node-id="UTLOyG1VnCCALIKrCuqAZe">
+  <div class="gift-tag" data-page-node-id="KmikKCnEG7PeRpuBcNATPB">🎁 这是一份备考礼物</div>
+  <h1 data-page-node-id="WCjRGWeCIGnqBOYYCCn8Ei">武汉工程大学 <em data-page-node-id="Qg4bCE0MckD22pdU4B4SCD">826 工程项目管理</em><br data-page-node-id="V6ujNbb01lRKnaE802zTkn">上岸手册</h1>
+  <p class="hero-sub" data-page-node-id="TJZFc3oW962dDaISL3UWaH">土木工程专硕（085901）· (06) 工程管理方向 · 依据 <b>2027 年官方考试大纲</b> 整理</p>
+  <div class="hero-chips" data-page-node-id="WioeYj5VR9ByTSnJDi66rL">
+    <span class="chip" data-page-node-id="lEDTzxuhHRjYlDyjTrkC5x">初试 <b data-page-node-id="yGsBqB2nHgzLvbHtFo7PLI">101政治 + 204英语二 + 302数学二 + 826工程项目管理</b></span>
+    <span class="chip" data-page-node-id="FwyM6em9ZRKcTVZCyD5s1x">专业课满分 <b data-page-node-id="8up1G4tHHnDUaE6zQPefYt">150 分</b></span>
+    <span class="chip" data-page-node-id="3HPMDegxfpIVweqWqbdOXV">考试 <b data-page-node-id="oD2NPu1oFvFSSjAG8HtYag">180 分钟 · 闭卷</b></span>
+  </div>
+  <div class="checkin-area">
+    <button class="checkin-btn" id="checkinBtn" onclick="doCheckin()">🗓️ 今日打卡</button>
+    <span class="streak" id="streakText" hidden>🔥 连续打卡 <b id="streakNum">0</b> 天</span>
+  </div>
+</header>
+
+<div class="progress-wrap" data-page-node-id="1V8fKYynZdjc3k0RcCUGHO">
+  <div class="progress-card" data-page-node-id="PKbUGAEsGwJgtFFBragbqs">
+    <span class="label" data-page-node-id="VWnBZNbvP3Vw6dpJHbF79u">大纲打卡进度 <b id="pct" data-page-node-id="fxosVxXEO40OSMe7W4Hdbl">0%</b></span>
+    <div class="bar" data-page-node-id="ox0KvWgoi2GlUGY44dR1nT"><i id="barFill" data-page-node-id="0XhvLzpRHAm6BlgdBBNyZp"></i></div>
+    <span class="label" id="count" data-page-node-id="yEGJ4josDmMtnvmBIVaE55">已完成 0 / 13 章</span>
+    <button class="reset-btn" onclick="resetAll()" data-page-node-id="ANVcGuH4YdIXkkBQDZaZaE">重置</button>
+  </div>
+  <p class="hint" data-page-node-id="nAq3rJUWlmiUHeaFunQXmn">点每章左侧的小方框可以打卡，进度会自动保存在这台设备上，下次打开还在。</p>
+</div>
+
+<main data-page-node-id="fgpwDIImD3tC3DkHZAfKGl">
+
+<!-- ================= 考情速览 ================= -->
+<section id="facts" data-page-node-id="AgSGJKpYJjorLbUtsj8rur">
+  <h2 data-page-node-id="ATq9FQ9ReiY3EnVHchWDzc"><span class="no" data-page-node-id="NmS30e4OmRT2Bjjlx5mpig">01</span>考情速览</h2>
+  <p class="sec-sub" data-page-node-id="Q1jNsaoXJ6mqd3BWn8Ad9p">先把战场看清楚：考什么、多少人、多少分能上。</p>
+  <div class="card" data-page-node-id="6HS85TyEihkG79nGbiYvdW">
+    <table data-page-node-id="EIVEv6mpeGMu2jbUd7CkRv">
+      <tr data-page-node-id="y2xsq2duX0qd9ZoM7PCJqa"><th style="width:130px" data-page-node-id="ym6w6RTj8XNAKtXYGGzxRZ">专业</th><td data-page-node-id="OH1i0Nymj5vXzL4RllP5aK">土木工程（专业学位，代码 085901，属土木水利类）· 研究方向 <b data-page-node-id="ncuYvW2fAWzQqhcxrBIkL4">(06) 工程管理</b> · 全日制</td></tr>
+      <tr data-page-node-id="DY7AjbXj8t7cY9uCTeFyzc"><th data-page-node-id="vCxetjj5EBJyd1O8NRtGUt">开设学院</th><td data-page-node-id="kLMASZcehvNpNrR24JBv3R">土木工程与建筑学院（学院代码 103）</td></tr>
+      <tr data-page-node-id="zGrBTse0E92rXrRCm3EUBQ"><th data-page-node-id="wzvgsnStueCW3vs4v3memS">初试科目</th><td data-page-node-id="66C482UdGO1Ig97bctnluC">① 101 思想政治理论　② 204 英语（二）　③ 302 数学（二）　④ <b data-page-node-id="CA4iB3TrxbG4jLEuVFNKIU">826 工程项目管理（学校自命题）</b><br data-page-node-id="PCPdGj887SO288KEwL2rem"><span style="font-size:13px;color:var(--ink-soft)" data-page-node-id="DPWRARqWPeSTvcalIo7u8G">注意：同专业的其他方向考的是材料力学，只有工程管理方向考 826，报名时别选错。</span></td></tr>
+      <tr data-page-node-id="lLbqFHZO0Y00pvqBN8dtMQ"><th data-page-node-id="FXInD26SEkAwVO0UmjBzlJ">招生规模</th><td data-page-node-id="eigbERFWMzZXdMCMsJTwfr">085901 全专业计划约 <b data-page-node-id="90pnlJagRFu1dIpzbEFavp">74 人</b>（不含推免，2027 年目录口径）——比学硕（每年仅 2~3 人）名额多得多</td></tr>
+      <tr data-page-node-id="FmKEIRkQLniCUBZm3UhOPA"><th data-page-node-id="yDH8eIhYgIQQtU4NtFCUPH">学制 / 学费</th><td data-page-node-id="yrFfB6Jt1Rn88GaVkmFuyl">基本学制 3 年，学费约 1 万/年（2027 年目录口径，以学校公示的收费标准为准）</td></tr>
+      <tr data-page-node-id="2Caq5mbtKwYwqDy6pK1LLE"><th data-page-node-id="xwAdItQeXMW59WertHuaAe">复试科目</th><td data-page-node-id="H12kJDElpW7BldGkefeF5X"><b data-page-node-id="Qwe395Am797yjrRYRRRKiF">工程经济学</b>（100 分，2 小时；题型：简答约 30% + 分析论述约 30% + 计算约 40%）</td></tr>
+    </table>
+  </div>
+  <div class="card" data-page-node-id="JXyx9Fb1NYNWwRjZAtSJly">
+    <table data-page-node-id="SB0jIpPFmNKvwgcyiN7Zdy">
+      <tr data-page-node-id="i0YYreTRbRaa2WcXmUdtdN"><th data-page-node-id="Z5H24fAXYNP9pq8l2kDnwa">年份</th><th data-page-node-id="Tuw5m5edgGLRNujxVfAIXD">总分线</th><th data-page-node-id="LYxDj1K6VxviosNau4aGN7">政治</th><th data-page-node-id="gGhDAGtjFKSAfERlgjgWmM">英语二</th><th data-page-node-id="DULapk7DQMic34jyFse3eU">数学二</th><th data-page-node-id="yDBk6aLSh0kX4sTOIFuLVA">专业课</th></tr>
+      <tr class="num" data-page-node-id="ccukon4e5ACuNeYDuOHryT"><td data-page-node-id="PBEDxwHT6mdKWzXgtKZUoW">2026</td><td data-page-node-id="I4rlnnnV03aJpRpOXcYbvg"><b data-page-node-id="PcxYZjALDki6hvcTEKY5mj">264</b></td><td data-page-node-id="oPHqOcE4pArbjD4WkGjuBi">35</td><td data-page-node-id="GtvVtP8JhDKXXUqHdrY1pf">35</td><td data-page-node-id="L76gNPMC6y6kPDaF8jm2cK">53</td><td data-page-node-id="n09Q9VplJP3ZILVk7wmGGd">53</td></tr>
+      <tr class="num" data-page-node-id="rQT0jQXMEAshTaclL4ityb"><td data-page-node-id="fCrPQMMizXuED2gKCPOmF6">2025</td><td data-page-node-id="6x0TCmRSsPaYlR14nshqDj">260</td><td data-page-node-id="YbV0cjVZ2nl8wNZUHQhFNb">34</td><td data-page-node-id="m2nspBVMFiLQK2MDZSBGbY">34</td><td data-page-node-id="pnoYl0Sk7lsjoncFPJdrsc">51</td><td data-page-node-id="5DbkDUzxYAfXeTtbxT0xqR">51</td></tr>
+      <tr class="num" data-page-node-id="uFfD3BmPBNn2NIUFSBD8Bd"><td data-page-node-id="3r0sJQDqadE9AuhGoItgBK">2024</td><td data-page-node-id="pdGteayEdDIixB2DXPVhwb">273</td><td data-page-node-id="HkNFyPG8iKPjjIKxzKAs0t">37</td><td data-page-node-id="BTA0VFIQKrCAVHFbg20Uj0">37</td><td data-page-node-id="XeDr9T98iC0wBLaGgXgR7p">56</td><td data-page-node-id="Ek4DUz0pXMEvGBG6YzDyXY">56</td></tr>
+    </table>
+    <p class="hint" style="margin-top:10px" data-page-node-id="5b0FrHtIO6W0or68vgtJQm">近三年均执行工学国家 A 线，未单独划院线。也就是说：过国家线就有复试机会，专业课 826 拿高分是拉开差距的关键。</p>
+  </div>
+</section>
+
+<!-- ================= 初试大纲 ================= -->
+<section id="outline" data-page-node-id="40S6yTMZnBqiyoaPNRYo6m">
+  <h2 data-page-node-id="SvR7QO012ivYXtitNfATMu"><span class="no" data-page-node-id="kL1YckGNhF0Ksxyq0Zbpvu">02</span>826 考试大纲 · 逐章打卡</h2>
+  <p class="sec-sub" data-page-node-id="nurW7a2CAz8GNqUMUWoWlj">13 章逐字核对自《武汉工程大学 2027 年硕士研究生招生考试〈工程项目管理〉考试大纲》。<span class="tag t-hi" data-page-node-id="VgR54OIna1B3pzp69VJ1Ef">掌握</span> 是必拿分项，<span class="tag t-mid" data-page-node-id="1sCRsaILQTSQrGwIFF9sgh">理解</span> 要能说清楚，<span class="tag t-lo" data-page-node-id="0BYlvrF0wc2kq2bBxa61Jy">了解</span> 混个眼熟即可。展开看考点清单，学完一章就打个勾，每章末尾还配了练习题，点选项立刻判对错。</p>
+
+  <details class="chapter" data-ch="1" data-page-node-id="R6YCmx6byvl3vvPsMDnPG5">
+    <summary data-page-node-id="DewDisaVs2SNEUNCjq7vxj"><span class="cb" data-page-node-id="3E3vjszRT6zr66LBd9sscs"></span><span data-page-node-id="Yif4v20Snek8Wdll1REtZp"><span class="ch-title" data-page-node-id="1EGzKrto4pD3BPtJElJlUK">第 1 章　工程项目和项目管理</span><br data-page-node-id="5TfZDoeGKsU30g60NQtao8"><span class="tag t-lo" data-page-node-id="Doj2uJVfWCUTI4xT9ufo2H">了解</span><span class="tag t-mid" data-page-node-id="j0jtcm0qa4Y0tfKFC1w0ft">理解</span><span class="tag t-hi" data-page-node-id="ksHlbBmbJUT02DbAkeawq3">掌握</span></span><span class="arrow" data-page-node-id="fBx7ZzQl9mGOm2tzyLqrVw">▸</span></summary>
+    <div class="ch-body" data-page-node-id="XY3KIPgcuEu3ivRDFJJxlc"><ul data-page-node-id="UlZOmy9iyKfjGoo1hIO4TU">
+      <li data-page-node-id="HZJXuzSFl0qRpAJQi2HODA">了解：工程项目的含义和特点</li>
+      <li data-page-node-id="Hmjsq4EVwrLEPfoTLijQ5R">理解：工程项目全生命周期的含义</li>
+      <li data-page-node-id="BLDSDSwMYBYgEcjAzpjjH9"><b data-page-node-id="n6r7BbGHdCzsRhveDUfUfF">掌握：工程项目管理的类型和任务</b></li>
+    </ul></div>
+  </details>
+
+  <details class="chapter" data-ch="2" data-page-node-id="oGwVeBcKe5578TiwgbIFAG">
+    <summary data-page-node-id="BJ9xMvJVJ0jSul2t660sVn"><span class="cb" data-page-node-id="A6B5CIGnonTcdvsgz3W1gd"></span><span data-page-node-id="1wd69QMUkWo6pH1rFtcFMI"><span class="ch-title" data-page-node-id="0onDpplHbQnnnihZevQmrP">第 2 章　项目管理的组织理论</span><br data-page-node-id="nV1mE5lFtiUYRG4AWMvP6Z"><span class="tag t-lo" data-page-node-id="iCJDmnsiw8GtEImh8eXDch">了解</span><span class="tag t-mid" data-page-node-id="ioCBmVrGGzVAU2uGurB166">理解</span><span class="tag t-hi" data-page-node-id="8kOT1aon0GvNwwkPyG67zx">掌握</span></span><span class="arrow" data-page-node-id="E68Qqwog7U6fA5SLWR2fRw">▸</span></summary>
+    <div class="ch-body" data-page-node-id="CBHGsrcJeM9FOWpcOBxK57"><ul data-page-node-id="8lBMG4emtgGp3UJ7r7lHEV">
+      <li data-page-node-id="lGg9tyI4c0Eocievk8NGLW"><b data-page-node-id="GVOlviHroXoLJHNBzSPpBR">掌握：组织结构模式、组织分工方式</b></li>
+      <li data-page-node-id="ugi49pOhzqYfERCh287mSQ">了解：工作流程组织</li>
+      <li data-page-node-id="A76aOcG4ULhHJF4KHzhPFI">理解：工程项目结构、工程项目管理的组织结构</li>
+      <li data-page-node-id="AB8iASHfo0r60YoknCfC9f">了解：工程项目管理规划与工程项目组织设计方法</li>
+    </ul></div>
+  </details>
+
+  <details class="chapter" data-ch="3" data-page-node-id="3WwGeptT8MVRly7PsclncI">
+    <summary data-page-node-id="LAHJJqkd5mk6KpkzVXo0kY"><span class="cb" data-page-node-id="GiDCTIzdplCPcghH63uR11"></span><span data-page-node-id="79A1M2HSE3GGgZa8iywXp3"><span class="ch-title" data-page-node-id="W9XaJj9TZ5c4cav5KMSuEy">第 3 章　项目策划</span><br data-page-node-id="EnIU3Bv0Rw60bxNzM2kxKZ"><span class="tag t-lo" data-page-node-id="69ukQncZ3aqnfFSaMda4O2">了解</span><span class="tag t-mid" data-page-node-id="sFwU5x5aMa7abTz3zd3Afb">理解</span></span><span class="arrow" data-page-node-id="AxQ1HwDbnW5rbePwCKkG3S">▸</span></summary>
+    <div class="ch-body" data-page-node-id="3Y9uvl8xmfDebFsLFXYUeH"><ul data-page-node-id="iAhpzXdHtcZUd321S8dt0X">
+      <li data-page-node-id="T8Tk2IhEshfLFFyCxkmINC">理解：项目策划的基本概念</li>
+      <li data-page-node-id="VWqux0PHLc806bnrTUckEc">了解：项目环境调查与分析</li>
+      <li data-page-node-id="fay2WYXSY38MdOj5pOK4Ge">了解：项目决策策划和实施策划方法</li>
+    </ul></div>
+  </details>
+
+  <details class="chapter" data-ch="4" data-page-node-id="Ri1frTUU2OjajC7yymaJLa">
+    <summary data-page-node-id="kCFVsCVg26yclp3glidmnK"><span class="cb" data-page-node-id="3tSa05EFExKdFZnLTQGX8B"></span><span data-page-node-id="2TYda4P5Q91nNnlbjSuyVb"><span class="ch-title" data-page-node-id="N4LSxU1cjrNb04bFI3Dp6A">第 4 章　工程项目目标控制基本原理</span><br data-page-node-id="DmSFeKDKleArWLDkXJuwTz"><span class="tag t-mid" data-page-node-id="PPb9rnd70pnFFSNHGlFK6A">理解</span></span><span class="arrow" data-page-node-id="p01Qz2OgzqTnYtZLfWMOlL">▸</span></summary>
+    <div class="ch-body" data-page-node-id="jC31k1igwd4ybN7RRoq2V5"><ul data-page-node-id="JxncyQkBV4hu746xwyPlUu">
+      <li data-page-node-id="x1qAMgOy2QOANdXhZYEegL">理解：动态控制原理在项目目标控制中的应用</li>
+      <li data-page-node-id="gGwYJCUkJLLxmFuSL6eRsh">理解：目标控制中的纠偏措施</li>
+      <li data-page-node-id="fCBDwrHMQ95IBhH87c3l6p">理解：风险管理在项目目标控制中的应用</li>
+    </ul></div>
+  </details>
+
+  <details class="chapter" data-ch="5" data-page-node-id="kXa6YW7kxdhFYP6Zcim52J">
+    <summary data-page-node-id="dzzhquJByF1USRc0u88HIc"><span class="cb" data-page-node-id="ixmgtC8FhyMzMgFQMEsbxU"></span><span data-page-node-id="OkwZmfDrOVW8dk8BKEq4F3"><span class="ch-title" data-page-node-id="ZZkl7NLkfjENkIEXDTe935">第 5 章　工程项目采购管理</span><br data-page-node-id="7YcMk9kLKD3IKDrgxBBi8A"><span class="tag t-hi" data-page-node-id="Ye9f60lnFYx4dlMsZazlpq">掌握</span></span><span class="arrow" data-page-node-id="jVQIsNe5HbVcvF6gw7B1gc">▸</span></summary>
+    <div class="ch-body" data-page-node-id="LNfPEOQsIM6NfNC5JxDxI0"><ul data-page-node-id="VmQAMhxRagOT70EKABu5ZD">
+      <li data-page-node-id="XMx4HK095czXrXdGDWXlIh"><b data-page-node-id="jsXbFGrx9fh6jC7nsGJPGR">掌握：工程项目采购的基本模式</b>（DBB / DB / EPC / CM / PMC 等，高频简答考点）</li>
+    </ul></div>
+  </details>
+
+  <details class="chapter" data-ch="6" data-page-node-id="IsFiEsv6xaDXfpZ8MxbxoM">
+    <summary data-page-node-id="AeibdRPtySk9hV1hylzDBC"><span class="cb" data-page-node-id="Iahpq09QHVUDrEWzQynaOj"></span><span data-page-node-id="DhIyzWEzBK7Srrh4rPSOg9"><span class="ch-title" data-page-node-id="cS3b1CWBsL0kv8T8qIzhZr">第 6 章　工程项目投资控制</span><br data-page-node-id="bOOJbBASmGx7NIi2abxClX"><span class="tag t-lo" data-page-node-id="ZDQfKpHeEnhKEFAkTwD7r1">了解</span></span><span class="arrow" data-page-node-id="K28vrvFgkmF11QSs1gRTdv">▸</span></summary>
+    <div class="ch-body" data-page-node-id="oie37KlboSU6bSYmXIMpCw"><ul data-page-node-id="2f90lsFa44nem8VnNnF1lR">
+      <li data-page-node-id="oDF16Hfl3stqvD2DPJ4f6W">了解：设计阶段投资控制的技术方法</li>
+      <li data-page-node-id="Uxjwdx4Hs61pehheq81hRt">了解：工程项目招标采购中的投资控制过程</li>
+    </ul></div>
+  </details>
+
+  <details class="chapter" data-ch="7" data-page-node-id="RRxpLz8iHAVl2yvyZXYtWU">
+    <summary data-page-node-id="ROrkHgiS2KioqQr5NBXubq"><span class="cb" data-page-node-id="W5yppYtJTREnGZUOyQjx2d"></span><span data-page-node-id="QCzvULQPjhzkAzr2fWE2Ho"><span class="ch-title" data-page-node-id="TRQCyhuEvMWDHkr9jXQYlv">第 7 章　工期计划与进度控制 ★计算题重灾区</span><br data-page-node-id="GGGutDEPCL3UDr9ODmcFhc"><span class="tag t-lo" data-page-node-id="6EYu4Q1C2HuJfESmSg7Xkh">了解</span><span class="tag t-hi" data-page-node-id="2aFEGWBWEfpEcT4DI6bZfy">掌握</span></span><span class="arrow" data-page-node-id="XwIG3nlLjPOdEyoO3SfKTX">▸</span></summary>
+    <div class="ch-body" data-page-node-id="8Nx1zE7Xz9AiSKtGQVPqPn"><ul data-page-node-id="YvacZ9bQa3mrworlyFubv4">
+      <li data-page-node-id="GBXhEclEIEZrgfE0FDoRau"><b data-page-node-id="0Y6SzTZ0cYuD3cXHydEhkg">掌握：工程活动持续时间的确定和逻辑关系分析</b></li>
+      <li data-page-node-id="MCubEfmIfCVH0lmW4CD0vb"><b data-page-node-id="e3hEE64mWbfpCLHHbMHYqE">掌握：横道图和线形图</b></li>
+      <li data-page-node-id="vv0f2Z8wHcLOMjeypY8i2V"><b data-page-node-id="oROjiKvFnsGGAdG0VKzs8A">掌握：网络计划方法</b>（双代号网络图、时间参数计算、关键线路——必练计算题）</li>
+      <li data-page-node-id="j5wMweP648PvKQrXWgbhq1"><b data-page-node-id="RCFmII1ITP8ElDn3CICMcB">掌握：资源计划和优化方法</b></li>
+      <li data-page-node-id="P1X4eTeswwKwNuRovTC1o8">了解：实际工期和进度的表达</li>
+      <li data-page-node-id="luN8HAB59NASrr05dXxS6J">了解：进度拖延原因分析及解决措施</li>
+    </ul></div>
+  </details>
+
+  <details class="chapter" data-ch="8" data-page-node-id="ybQSyc23vAXrZAH7Kfw1lB">
+    <summary data-page-node-id="je4xE0oy9Ejv4TelQ30hAh"><span class="cb" data-page-node-id="jBACATarSWapXmRnpwP17G"></span><span data-page-node-id="xHcigtvLXBqKC7aofPW346"><span class="ch-title" data-page-node-id="RSw9EAkv5wYWQ7b33rDcbK">第 8 章　成本计划及成本控制 ★挣值法必考</span><br data-page-node-id="EOYm6bcZNYkzKN7uub9XqF"><span class="tag t-lo" data-page-node-id="FXc9U46gfZIx996QgltRdW">了解</span><span class="tag t-mid" data-page-node-id="hR8HCXZoFwB0VVIEAiyA6w">理解</span><span class="tag t-hi" data-page-node-id="PEc19cLmMQuETHqkbfFmlS">掌握</span></span><span class="arrow" data-page-node-id="QJSLDkmS2idD4jGVLx4zF7">▸</span></summary>
+    <div class="ch-body" data-page-node-id="sGgxPVX26FyC5CgDRdDoFh"><ul data-page-node-id="yIW7IyLAZLITGPSIcGEfJq">
+      <li data-page-node-id="fVDQDkkQ9UbKQ5GpWHbqz3">了解：工程项目成本管理过程</li>
+      <li data-page-node-id="0forEKDl94HIXt0UEoGZ45">理解：工程项目成本的分解</li>
+      <li data-page-node-id="TlUMamgSTxLUIWKDCqUD65">了解：工程项目计划成本的确定</li>
+      <li data-page-node-id="GFEieJ02HDTFzFg3zHG2cq">理解：工程项目成本模型和资金计划</li>
+      <li data-page-node-id="b5yxM02qhqbZQBnYGVkm5p">了解：实际成本核算过程</li>
+      <li data-page-node-id="aY528ErsgvKS66EipitYK5">了解：成本跟踪和诊断方法</li>
+      <li data-page-node-id="Tj4XJDy7BW5gJHDvfmxXuw"><b data-page-node-id="tUpG7rHMiTk8XfzgzlRsdP">掌握：挣值法的应用</b>（PV / EV / AC、CV / SV / CPI / SPI——计算题常客，务必练熟）</li>
+    </ul></div>
+  </details>
+
+  <details class="chapter" data-ch="9" data-page-node-id="8ANjgz7uAV9QTkbmPZePYA">
+    <summary data-page-node-id="gWlkx8Z2DEgAPeHHzWqedd"><span class="cb" data-page-node-id="AhaZFAWaMHT9WlLu4gz0wP"></span><span data-page-node-id="kAvRNwXkfvsC6H0r4yaL0a"><span class="ch-title" data-page-node-id="kybQJJruGFh8MwGHrEblEH">第 9 章　工程项目质量和安全管理</span><br data-page-node-id="JR4HuAE4xGWI0iTpU9sFnH"><span class="tag t-lo" data-page-node-id="kgNJrGCHfNpEERBYjhVRkk">了解</span></span><span class="arrow" data-page-node-id="h6VK7IZFFN5TNtbk7kLxSY">▸</span></summary>
+    <div class="ch-body" data-page-node-id="LhDOGD2TTXsm3rhSnTdxtX"><ul data-page-node-id="GhWXjwigSxJI7oG86aDBwj">
+      <li data-page-node-id="ymuSXajh3IqTDmsptpszhr">了解：工程项目质量的基本概念</li>
+      <li data-page-node-id="pLnyicsyFNjQXNudzIKDvL">了解：工程项目质量管理体系的建立与运行</li>
+      <li data-page-node-id="AFqwIwQ6m26YKEFklJNIXA">了解：工程项目施工现场安全管理过程</li>
+    </ul></div>
+  </details>
+
+  <details class="chapter" data-ch="10" data-page-node-id="aamNH01FJPgmeVYEJMAcJy">
+    <summary data-page-node-id="C3vluapV2wUNSgYTMfFDEG"><span class="cb" data-page-node-id="QwAcsKdYOKP4XYqUpxG4bP"></span><span data-page-node-id="kdnCuBE1CARPIvqi5rV67r"><span class="ch-title" data-page-node-id="YmBouFqPdoP6HUZndwRKOD">第 10 章　工程项目采购与合同管理</span><br data-page-node-id="EMAclX7AmnVEDPrqVRotaP"><span class="tag t-lo" data-page-node-id="2q5aprxHoFZv7u12XEeDGT">了解</span><span class="tag t-mid" data-page-node-id="EG0VbjziDcW5H9iTBF1TGl">理解</span></span><span class="arrow" data-page-node-id="spQIHrJGJ6SdnZVbpIcJqq">▸</span></summary>
+    <div class="ch-body" data-page-node-id="xu2dH55SSqTQ4xOaF9f5fS"><ul data-page-node-id="u7vJeFDlUEUizgW3wvnlIq">
+      <li data-page-node-id="6l83A6i3swEQmQXct1yBkg">了解：工程项目采购和合同管理过程、工程项目采购计划</li>
+      <li data-page-node-id="sf1Oj33DNBDvhJU8RLzjp4">理解：合同策划方法</li>
+      <li data-page-node-id="yqY8nyoEI7hpc2C70p649n">了解：工程项目招标投标、合同管理和索赔管理的流程</li>
+    </ul></div>
+  </details>
+
+  <details class="chapter" data-ch="11" data-page-node-id="R3f0hIcq0dl1C0nDwq7nst">
+    <summary data-page-node-id="8sJWag1znlkXrOp219bxCi"><span class="cb" data-page-node-id="fePJ2f2lDgyKyxSnmfGVa7"></span><span data-page-node-id="qFaybPsXuYCZWn6d8yYsTF"><span class="ch-title" data-page-node-id="9QuUjW3pLfxqoq2LwMUG9b">第 11 章　工程项目全面风险管理</span><br data-page-node-id="BJ0kbe0S00V0hFIGbMEJcg"><span class="tag t-lo" data-page-node-id="JlYXvHtCfmEhBAWIfDYUBQ">了解</span></span><span class="arrow" data-page-node-id="vEeK7RGhfuiZLTXhOcJOnr">▸</span></summary>
+    <div class="ch-body" data-page-node-id="Up4fNz0CEyNARaHbMzqvEW"><ul data-page-node-id="s8EK11g3g5Zmn9xUMgOIYV">
+      <li data-page-node-id="ZXAbFvVKyQAZZbrIADOHiF">了解：工程项目风险和全面风险管理的基本概念</li>
+      <li data-page-node-id="XtOK62ieLZADcMTBxrhKA7">了解：工程项目风险因素识别方法</li>
+      <li data-page-node-id="bAIiAu3aOFHc22XJD0sGDA">了解：风险评价方法和基本的风险应对及控制方法</li>
+    </ul></div>
+  </details>
+
+  <details class="chapter" data-ch="12" data-page-node-id="jYkbOuoDucBnxXewlEVCco">
+    <summary data-page-node-id="mxWnBqDAXGHAZxgwxLnRnS"><span class="cb" data-page-node-id="dlGRjDsCvE4HBykklYLCmm"></span><span data-page-node-id="0jZrlHeGMKzH73XyQxPGSO"><span class="ch-title" data-page-node-id="pJXsOBzcCpFJ8rDgTQMf1G">第 12 章　工程发包与物资采购项目管理</span><br data-page-node-id="vdPXVGa1QhlsZHh1f98wnT"><span class="tag t-lo" data-page-node-id="qVcTzmDg42sFFodfi3PjjT">了解</span><span class="tag t-hi" data-page-node-id="9EjiwTzZjMLOnDPk2A2vrD">掌握</span></span><span class="arrow" data-page-node-id="KnwnUZ4LLrIohI6qh0L1ou">▸</span></summary>
+    <div class="ch-body" data-page-node-id="smg8G5X6xLDCNcy9gSDhQb"><ul data-page-node-id="zvvyyDEsNSDqc1GTHmZmct">
+      <li data-page-node-id="r72mxU5LGBo4NOd8IgKN9M">了解：工程发包与物资采购项目管理的任务</li>
+      <li data-page-node-id="OqqoHdTTE8H00cu6saYRYZ">了解：工程项目采购资格审查过程</li>
+      <li data-page-node-id="dMclVSEOXKQa7tQyb6lBSA"><b data-page-node-id="4DESLXMFDUeDREKKLS7g8B">掌握：工程项目采购招标文件的编制方法</b></li>
+      <li data-page-node-id="gA3CSFLsxFGf0rdNWcnrVy"><b data-page-node-id="MudgOwVCUZOoC759syEayA">掌握：工程项目采购评标流程</b></li>
+    </ul></div>
+  </details>
+
+  <details class="chapter" data-ch="13" data-page-node-id="bJgnXpi8AwQt2sELe7ENoT">
+    <summary data-page-node-id="zcmdqHocaQBMTZ415QOQsy"><span class="cb" data-page-node-id="n0BYPZXW3qfuvzErQVjtEr"></span><span data-page-node-id="8wTG0SKEJVPvpo1JLkUrRD"><span class="ch-title" data-page-node-id="ZpYu4pu02KpBVtkaRoN1Hm">第 13 章　工程项目的信息管理</span><br data-page-node-id="lA7YA6OMHssK5mdm9N7F6E"><span class="tag t-lo" data-page-node-id="fzvKQPvUt6p6asBxovF8r5">了解</span></span><span class="arrow" data-page-node-id="WAB59qc3ejnrUU3cs9JjPy">▸</span></summary>
+    <div class="ch-body" data-page-node-id="naESIu5yfzmfqYIov5AWar"><ul data-page-node-id="VlFqGj35RsUCEWS5lWa6qI">
+      <li data-page-node-id="sIok2LFTnrx1Z4G5h3EOcq">了解：工程项目信息和信息管理的基本概念、项目管理信息系统的基本结构</li>
+      <li data-page-node-id="AcpR0I2rCXIxdfMKor8ifk">了解：项目管理常用软件及其主要功能，信息技术在项目管理的发展与应用</li>
+      <li data-page-node-id="pAlpt1AxWPZcv5lso7G5NY">了解：BIM 技术在工程项目管理中的应用现状（新趋势考点，近年论述题可能涉及）</li>
+    </ul></div>
+  </details>
+</section>
+
+<!-- ================= 参考书 ================= -->
+<section id="books" data-page-node-id="Udk1LmZF3C5HGNLCSHmYF6">
+  <h2 data-page-node-id="Fw8RItNVnx476efB281g2o"><span class="no" data-page-node-id="Drwe3mjI4rRsMAsmTkUOKM">03</span>参考书 · 别买错</h2>
+  <p class="sec-sub" data-page-node-id="hKOrMEJFWkUFWWFqCAiW9i">官方指定 4 本，但策略是「一主三辅」——把丁士昭吃透，其他三本当工具书查。</p>
+  <div class="card" data-page-node-id="4Ewy0GFdElMEsij1EqNLTE">
+    <table data-page-node-id="bPaMQW8b1lUqUwLoqA6tVf">
+      <tr data-page-node-id="7zRCMgEt8EvtgkUCIwGPAG"><th style="width:90px" data-page-node-id="E7LBr6CKayODkRQclCDDAz">定位</th><th data-page-node-id="3l92CYTdpICigERVDwFXDr">书目</th><th data-page-node-id="hu2FcSZ5ay9z88LTXgeSqF">怎么用</th></tr>
+      <tr data-page-node-id="yNKtUpIb0we6L7FkIEzyeM">
+        <td data-page-node-id="gyZFLFvIogXOBnEESYPB4V"><span class="tag t-main" data-page-node-id="s1NMLFD6BQrbroACp9dCBz">主教材</span></td>
+        <td data-page-node-id="8z49DvxX11SWtcvdyasdw3"><b data-page-node-id="QdAsdtTs1SnwAmCZPaZfX9">丁士昭《工程项目管理》（第 2 版）</b><br data-page-node-id="2zXTo2Syp7lLutjVifkH28">中国建筑工业出版社，2014</td>
+        <td data-page-node-id="z1Hs1l7yC2ig9u2jjAItX6">大纲几乎逐条对应这本书的章节。以它为复习主线，逐章读 + 做笔记 + 背框架。</td>
+      </tr>
+      <tr data-page-node-id="h8Qv9NXvTue9mjHrcbBPFX">
+        <td data-page-node-id="TKn92OD796972T9U3G90oQ"><span class="tag t-aux" data-page-node-id="1jozb67VIDcVuL35NtT98C">辅助 1</span></td>
+        <td data-page-node-id="6qNQ6KabDILtiTZWkhn0t5">成虎、陈群《工程项目管理》（第 4 版）<br data-page-node-id="jCxT0ihpIyweXk05JFt4Sw">中国建筑工业出版社，2015</td>
+        <td data-page-node-id="ECfuX99JwIvU6ODWKJ8Bi2">某些概念讲得更细更透，主教材看不懂的地方来这里换种说法。</td>
+      </tr>
+      <tr data-page-node-id="tlleyEHE1b3EaO1WXPR2bo">
+        <td data-page-node-id="XHhdlznG2Obkj06bMrMhWZ"><span class="tag t-aux" data-page-node-id="mYgnU4IDDV9whbV93ILY6P">辅助 2</span></td>
+        <td data-page-node-id="6ZyU29zlQJYeUTELawdzqT">全国二级建造师考试用书《建筑工程管理与实务》（2022）<br data-page-node-id="wwAm0xClUlqt0bWn5i2p3X">中国建筑工业出版社，2021</td>
+        <td data-page-node-id="TSM9TjmirBAiZvVyhXzvr1">施工实务、质量安全部分的表达可借鉴，答题语言更"工程范"。</td>
+      </tr>
+      <tr data-page-node-id="pjG73BUtPqLqO153VoW9MO">
+        <td data-page-node-id="zpm0jqDgpYXnqmqHllcT50"><span class="tag t-aux" data-page-node-id="ZekKIRyQeIpOZL8igYQnVF">辅助 3</span></td>
+        <td data-page-node-id="brRCPh023LjykrBoJt20iz">丛培经《工程项目管理》（第五版）<br data-page-node-id="XwUYzq59eyOCpE6JZ3SEGA">中国建筑工业出版社，2021</td>
+        <td data-page-node-id="Jk0aYMHTRuVbxDR4q4nZ7g">网络计划（第 7 章）讲得系统，算例多，学计算题优先翻这本。</td>
+      </tr>
+    </table>
+  </div>
+  <div class="note" data-page-node-id="L2zpw3XcMmPwBkVjkYy9HE"><b data-page-node-id="KSe4nzdlwE2Ar0HjrgDbKp">买书提示：</b>正版优先在中国建筑工业出版社官方渠道或大电商平台自营店购买，认准版本号（第 2 版 / 第 4 版 / 第五版），二手书注意别买到旧版。</div>
+</section>
+
+<!-- ================= 题型攻略 ================= -->
+<section id="skills" data-page-node-id="9UVkeFazADE3iCev9EUrWZ">
+  <h2 data-page-node-id="EJ4Gop4o2h19HVRLImOIpC"><span class="no" data-page-node-id="SFu4yCI3GjoVHI58bTmapl">04</span>题型与答题攻略</h2>
+  <p class="sec-sub" data-page-node-id="4vsWO2iew2mA40Xci0mCst">闭卷笔试，180 分钟，满分 150。题型四种，各有各的拿分姿势。</p>
+  <div class="card" data-page-node-id="vSOU9W2KWi7MRVWhqYigXt">
+    <table data-page-node-id="mchw5jwjJLYQTyMT697339">
+      <tr data-page-node-id="YskPi4FlQR6MiStr8UqhFW"><th style="width:110px" data-page-node-id="iqrozSOSo7LPBIyfME98Xm">题型</th><th data-page-node-id="jcC30bOJAR5RSncuGEnayS">攻略</th></tr>
+      <tr data-page-node-id="RCHosJLTi8M8Ev7RfU3FBZ"><td data-page-node-id="xSlQRgAwLrnYW4u42rT9Ff"><b data-page-node-id="i3ZNMcJugEpNF1f9VeQL0K">选择题</b></td><td data-page-node-id="vZyNlItBqdwQheeGxTP99W">考概念辨析和分类记忆（如组织结构模式的种类、采购模式的适用条件）。刷书时把"分类 / 组成 / 步骤 / 特点"全部整理成表，选择题基本从这里出。</td></tr>
+      <tr data-page-node-id="llErxQ4L9ihVxJAV1P4GDH"><td data-page-node-id="gwu0Hfr6bqFFXsjJbc3NNX"><b data-page-node-id="wNoPVuqCPhfEwXxR5DRmVZ">简答题</b></td><td data-page-node-id="S7ArLqYynMS7TfpruMYPi9">按点给分，背的时候就要"分层背"：先背大标题（几点），再展开每点一句话。答题时标序号 ①②③，宁可多写一条方向对的，不要长篇大论只有一点。</td></tr>
+      <tr data-page-node-id="3j8z9CIfAk8fmWH9YBM7dZ"><td data-page-node-id="hhHgk0AZnFCK2UT7Dq922e"><b data-page-node-id="oyWUCTiFJsXwFgxsfHDC4A">计算题</b></td><td data-page-node-id="gG6pX7LgWhgOEDJIotHa08">两大金刚：<b data-page-node-id="iys4HAhnVudFrGJeLAnxt0">网络计划</b>（时间参数、关键线路、工期优化）和<b data-page-node-id="5ny8RC8ag83p4IkPi1KCQh">挣值法</b>（CV、SV、CPI、SPI 判断进度成本状况）。每种题型练 10 道以上，做到 15 分钟内一道不出错。</td></tr>
+      <tr data-page-node-id="aK6bDhXsQqJfXACjJLfGPQ"><td data-page-node-id="DKG722nGNYGcB7j8Jo4lpF"><b data-page-node-id="qgbVpn9E9kxjMd8DAyUDon">论述题</b></td><td data-page-node-id="8uksigY1NCtcwCWoQA74hx">考综合运用，比如"用动态控制原理说明某项目目标控制过程"。答题模板：定义 → 原理/步骤 → 结合题目场景展开 → 小结。字迹工整、分点分段，卷面就是隐形分。</td></tr>
+    </table>
+  </div>
+  <div class="note" data-page-node-id="ThaWzncqGM2SmAICwdl96L"><b data-page-node-id="SMhICjVZ9QnWzZDTGSrXgZ">一个原则：</b>826 的答案 90% 来自丁士昭教材原文框架。别迷信网上来路不明的"押题"，把大纲 13 章逐条过掉就是最稳的押题。</div>
+</section>
+
+<!-- ================= 复习规划 ================= -->
+<section id="plan" data-page-node-id="lhY70G2p8UL2dUigGwWNHc">
+  <h2 data-page-node-id="roybPdchaDDQ4flGAkbose"><span class="no" data-page-node-id="xdv66aznRHqig3XPge3emP">05</span>专业课复习规划（可调整的四步走）</h2>
+  <p class="sec-sub" data-page-node-id="FAhfEHDkXzZDn5FE0PL8X3">假设从现在开始、初试前约 8 周。如果时间更紧，压缩第一轮、保住第二轮和真题。</p>
+  <div class="card" data-page-node-id="XdbxbQuY2VCUZ39nAQYLjB">
+    <div class="plan" data-page-node-id="NffTo6svfqk7G2mF7SEPOl">
+      <div class="plan-step" data-page-node-id="8rPJ6veSO85PClY9PkcJvf">
+        <span class="when" data-page-node-id="Y0oGmNPwZC2oGh2v3mosQM">第 1~2 周</span>
+        <h4 data-page-node-id="6y4pJiEB3fjS0zWHHJZC82">第一轮 · 过书搭框架</h4>
+        <p data-page-node-id="vJ5LjPmMuXmnx3gIzP1Bk6">丁士昭教材逐章通读，对照上面的大纲打卡清单，每章读完画一张思维导图（只用一张 A4 纸）。此轮不求背，只求"知道每章讲什么"。</p>
+      </div>
+      <div class="plan-step" data-page-node-id="FxFlvhXm7lQqT0G6ZMejxe">
+        <span class="when" data-page-node-id="oow4hZQ9qa6A3CFvKWM20g">第 3~4 周</span>
+        <h4 data-page-node-id="l69kz9cqdPC5oWtEiCV18g">第二轮 · 背框架 + 攻计算</h4>
+        <p data-page-node-id="63b9yGPtiEyufY34uGDLXt">所有 <b data-page-node-id="tmtu3UQq07SF5OpyRDFTTK">掌握 / 理解</b> 级考点整理成背诵手册（自己抄写印象最深）。同步专攻两块计算：网络计划、挣值法，配合丛培经教材算例练手。</p>
+      </div>
+      <div class="plan-step" data-page-node-id="ZoWTfvkRbNbpLiAwXaRf5X">
+        <span class="when" data-page-node-id="CmzjrFmEi4GB0HPT6xMd9R">第 5~6 周</span>
+        <h4 data-page-node-id="rRrYCpvVbGKTr23sGp4b7D">第三轮 · 真题 + 查漏</h4>
+        <p data-page-node-id="rThi1CrTcL8JbeN6En4JLx">收集武工大 826 历年真题（考研论坛、直系学长学姐、学院办公室咨询均可），按 180 分钟模拟 2~3 套，错题回教材定位，标记高频章节重点加背。</p>
+      </div>
+      <div class="plan-step" data-page-node-id="kB8aJWCrFHnqsxDAyG8cbX">
+        <span class="when" data-page-node-id="3xRLJPDSKbNxiBt8uLS8px">考前 2 周</span>
+        <h4 data-page-node-id="mgEGQLSyO2T1HjkAJjYtlY">冲刺 · 滚动背诵</h4>
+        <p data-page-node-id="Xt36qt0KGIt86StXDbXjnR">背诵手册每天滚一遍，网络计划 + 挣值法各隔天练 1 题 keep 手感。政治大题冲刺期时间会被挤占，所以专业课的背诵量尽量在前几轮压到位。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= 复试 ================= -->
+<section id="fushi" data-page-node-id="vfh7XwmQVK0l1E6ON92buJ">
+  <h2 data-page-node-id="HjlGhO2EA6JeeM0JOTOvBD"><span class="no" data-page-node-id="NLA7tNfAPEJ8jIZAAlRibD">06</span>复试加餐 · 工程经济学</h2>
+  <p class="sec-sub" data-page-node-id="GkEF5QCuOktQg3oDgd0P4F">过了初试再学也来得及，但提前知道考什么，心里不慌。（以下为学院公布的复试大纲）</p>
+  <div class="card" data-page-node-id="X70Y1iUZIlRCo1Ev1N9fCn">
+    <table data-page-node-id="uEXEBynTxz9YRmqPUkGCsC">
+      <tr data-page-node-id="LFMIDLr2MVrm3cdVUcz4AF"><th style="width:130px" data-page-node-id="IQ7jwCO0ZJ1pbzUbw0QNAw">考试信息</th><td data-page-node-id="oTEPcQJUfKRPdiFKBWW6rE">2 小时 · 100 分 · 题型：简答约 30% + 分析论述约 30% + <b data-page-node-id="mhn3EyxNVL8qymBV34VHzD">计算约 40%</b></td></tr>
+      <tr data-page-node-id="HRWwXWuszwgFtB2wgyrHxI"><th data-page-node-id="hoDwJGddw7MrCHhX3hiyUm">教材</th><td data-page-node-id="Hm4EXCp3IDKH47XCGlgI3P">刘晓君《工程经济学》（第三版），中国建筑工业出版社，2015</td></tr>
+      <tr data-page-node-id="CV48ZlmSpjHOzc3F4yvLQm"><th data-page-node-id="j68rxE5uJvVjD5BRWqKNjB">参考书</th><td data-page-node-id="F4CtQSUeMJAFpd1VGGDKAm">邵颖红等《工程经济学》（第四版，同济大学出版社）；《建设项目经济评价方法与参数》（第三版）</td></tr>
+    </table>
+  </div>
+  <div class="card" data-page-node-id="BekdsX9kcxYKp8VTcpuMT5">
+    <table data-page-node-id="QPqpnNyHcZhwrpr0OQP8im">
+      <tr data-page-node-id="VNc34W4R3vnUoP7czeuzwi"><th style="width:220px" data-page-node-id="exrEY7A3R5lBXxZDEh7OW5">章节</th><th data-page-node-id="5jAHsNu2WnwcHCpYmHgtSl">重点要求</th></tr>
+      <tr data-page-node-id="4VTmXjRgW6RyxCzCwMYHYy"><td data-page-node-id="RkoxEldAnlxOAgSxzEbyK3">1 绪论</td><td data-page-node-id="7JHE4CB94DmCMdGutyRXKS"><span class="tag t-hi" data-page-node-id="pTUpBG6DuO7sNJyB8v793v">掌握</span>工程经济分析的基本原则和步骤</td></tr>
+      <tr data-page-node-id="jqcQBqvtseLnqNLavnGcJv"><td data-page-node-id="hBvTMD4CuDjVDusff9nwf8">2 现金流量与资金时间价值</td><td data-page-node-id="TZtGKBBVVGQVqeqO71S1Q3"><span class="tag t-hi" data-page-node-id="ru9NBXWC33tW3FlA4FA9Cx">掌握</span>资金时间价值的计算方法（单利、复利、资金等值）——计算题基础</td></tr>
+      <tr data-page-node-id="GpxpeCXIzlwg9ZBOYHQEUC"><td data-page-node-id="6JRPCjeNv4pUsrYbidr6Gp">3 投资、成本、收入与利润</td><td data-page-node-id="G1CtKI4k2wCxNlRK9yV1Sk"><span class="tag t-hi" data-page-node-id="crqBAQszgsShPF1nuAoWYB">掌握</span>销售收入、利润与税金的计算</td></tr>
+      <tr data-page-node-id="4B2aIRsrzaV4NH3DCpvCqr"><td data-page-node-id="pin5iqtCOisnHnTYwLkIRZ">4 工程项目经济评价方法</td><td data-page-node-id="AeFVr4TGlvrWLsc148G2aG"><span class="tag t-hi" data-page-node-id="MDHKfdcpoFcU9ykAXe7cKH">掌握</span>各评价指标的计算及应用（NPV、IRR、投资回收期）＋ 多方案比选原则</td></tr>
+      <tr data-page-node-id="iOxXQk1CsZ6Sv85QzMLRX8"><td data-page-node-id="DZudR2yexzav8tmbdz3Rro">5 风险与不确定性分析</td><td data-page-node-id="Bisdglru4BWKfgMhv60iPm"><span class="tag t-hi" data-page-node-id="gkcmz18tPibhBZAWC4utFs">掌握</span>盈亏平衡分析、敏感性分析及概率分析的基本方法</td></tr>
+      <tr data-page-node-id="G25ZtkXKoLBWriXr5ZDFOV"><td data-page-node-id="O998oAFN764CB1z8Xa3zlQ">6 财务评价</td><td data-page-node-id="nFlY8sK4ZokNlEeTrBtFUY"><span class="tag t-hi" data-page-node-id="0HFOmE23JlfFnB8Ssou2Gq">掌握</span>工程项目财务分析报表的编制及财务评价</td></tr>
+      <tr data-page-node-id="X5H26aCsUquZ9EB8icfTba"><td data-page-node-id="7ZcKiGiUUoM0BQjHYZ3Cnd">7 费用效益分析</td><td data-page-node-id="F6joMm8FPXOpn5HBBLDFjH"><span class="tag t-hi" data-page-node-id="rOpuWUC4EWfaS1gIP4tDFv">掌握</span>费用效益分析的基本步骤；<span class="tag t-lo" data-page-node-id="JvWhw98oSoE83iNsTCU7Td">了解</span>影子价格的确定</td></tr>
+      <tr data-page-node-id="M6iu4UpjUmO4rZGkVDWRRG"><td data-page-node-id="I1eK8t2E9HNgi9RDORVSq5">8 可行性研究</td><td data-page-node-id="2JNVNmtt7llYWgNx45peXL"><span class="tag t-hi" data-page-node-id="2iYye4W7LGGPlRBaoKs1eI">掌握</span>市场调查及预测的基本方法</td></tr>
+      <tr data-page-node-id="vP20HceVz6aJlU9lS5Tqko"><td data-page-node-id="PMnwkj1gjlBiToSEi4A52p">9 设备更新分析</td><td data-page-node-id="hZWaHviZvfQfvoDovOlDHk"><span class="tag t-hi" data-page-node-id="LfVGeGJWevBVc5EthiH0eN">掌握</span>设备经济寿命的确定及更新的分析方法</td></tr>
+      <tr data-page-node-id="vMwgRfhJqbLJvtnAOi64RK"><td data-page-node-id="gEyGV3kbqLxvHZlwmCm6tI">10 价值工程</td><td data-page-node-id="27qNoHyYayMsxyOXfxzNCv"><span class="tag t-hi" data-page-node-id="McUA08GFakqcu4iR6ccROV">掌握</span>价值工程的原理、方法及程序（功能评价、方案比选）</td></tr>
+    </table>
+  </div>
+  <div class="note" data-page-node-id="Db3Mn1ILD9CHTBmBfLBmWl"><b data-page-node-id="Kpan4qWGBoXxdxl6XhCb8K">复试提醒：</b>工程经济学计算占 40%，资金时间价值（第 2 章）是后面所有计算的地基，一定先学扎实。另外复试还有思想政治考核、专业面试和外语听说测试，英语口语可以提前每天练两句。</div>
+</section>
+
+<!-- ================= 官方入口 ================= -->
+<section id="links" data-page-node-id="Gd92R8iGE3cEIIbON9YHi8">
+  <h2 data-page-node-id="0qdHnLxQQKj8vhsuCkGvcG"><span class="no" data-page-node-id="6LLbvoPiNa6fEHPeChW3bh">07</span>官方信息入口（收藏这四个）</h2>
+  <div class="card" data-page-node-id="d9x6fsf6sww9AczL6WMDiU">
+    <table data-page-node-id="E2yDujRoiUILQwX929jLwo">
+      <tr data-page-node-id="tqheCQAohtOAwDMcD9qkpA"><th style="width:190px" data-page-node-id="NqxQ6JG5Bxl31iYxTprVvE">研招网（报名/官方目录）</th><td data-page-node-id="9p4KiMA69yeBGJwBdbgeRv"><a href="https://yz.chsi.com.cn" target="_blank" rel="noopener" data-page-node-id="xLYJpoFT1TXBQRgwwGJXrh">yz.chsi.com.cn</a> —— 27 考研一切以这里发布的武汉工程大学 2027 年专业目录为准</td></tr>
+      <tr data-page-node-id="b0z4P3AFyiK8nLFvXAG1vJ"><th data-page-node-id="HyJYuZPfFcJ8NmLDPraeZq">武汉工程大学研究生院</th><td data-page-node-id="boemZc4YjX017mjSID4Cya"><a href="https://yjs.wit.edu.cn" target="_blank" rel="noopener" data-page-node-id="TqSD3M3cEjvaTZlt95PuI3">yjs.wit.edu.cn</a> —— 招生简章、826 考试大纲、复试通知都在「硕士招生」栏目</td></tr>
+      <tr data-page-node-id="tPTky0CP3wubZFoVxT6s0z"><th data-page-node-id="3PjMwdB3s1dqX4JwZ1mL1L">土木工程与建筑学院</th><td data-page-node-id="bjpInkAyVBM7Djm3yDXtHV"><a href="https://cea.wit.edu.cn" target="_blank" rel="noopener" data-page-node-id="kqm269tJerEPqn6gSDPCKN">cea.wit.edu.cn</a> —— 复试大纲、复试名单、调剂公告</td></tr>
+      <tr data-page-node-id="Xgcj2F14cN7gDkQaY19JId"><th data-page-node-id="1fzG9ndudF1QsDi1h3eigJ">研招办咨询</th><td data-page-node-id="HYX94Dl8FNVABE62YYthwZ">拿不准就打电话，官网「联系我们」有研招办电话；学院网址 cea.wit.edu.cn 底部也有联系方式</td></tr>
+    </table>
+  </div>
+  <div class="note" data-page-node-id="QXbNEKoSCfRTFwJx0Ay7Mf"><b data-page-node-id="KqHYwrtYEf3Mh9WRjF7pX6">免责声明：</b>本手册的考试内容（13 章考点、参考书目、题型设置）逐字依据官方《武汉工程大学 2027 年硕士研究生招生考试〈工程项目管理〉考试大纲》整理；历年分数线为官方已公布的历史数据，仅供备考参考。招生专业目录、科目代号、学费标准每年可能调整，最终以研招网及武汉工程大学研究生院官方最新文件为准。</div>
+</section>
+
+<section id="tiku-embed">
+  <h2><span class="no">08</span>配套题库</h2>
+  <p class="sec-sub">真题自测 + 章节题库，全部内嵌在本页，做题进度自动保存。</p>
+  <iframe id="tikuFrame" title="826 题库" style="width:100%;border:1px solid var(--line);border-radius:16px;height:900px;background:#fff" srcdoc="<!DOCTYPE html>
+<html lang=&quot;zh-CN&quot; data-page-node-id=&quot;EmDnbAr1Pt7S9qxJ0KU7gQ&quot;>
+<head data-page-node-id=&quot;IjCBJD2AY4cXC9E5BmAnmj&quot;>
+<meta charset=&quot;UTF-8&quot; data-page-node-id=&quot;JvbBT9Rmx2W3p6mxprBCpS&quot;>
+<meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot; data-page-node-id=&quot;uwHY934zEWmvqUUJfEXamC&quot;>
+<title>826 工程项目管理 · 题库 | 真题 + 章节练习</title>
+<style>
+  :root{
+    --bg:#faf7f2; --card:#ffffff; --ink:#3b3226; --ink-soft:#7a6f5d;
+    --accent:#c2542e; --accent-soft:#fbe9e0; --gold:#b98a2f; --gold-soft:#faf1dd;
+    --green:#4a7c59; --green-soft:#e8f1ea;
+    --line:#eadfd0; --radius:16px;
+    --hi:#b93a2b; --hi-bg:#fdecea; --mid:#b07a13; --mid-bg:#fdf3dc; --lo:#5b7f8a; --lo-bg:#e9f2f4;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{font-family:&quot;PingFang SC&quot;,&quot;Microsoft YaHei&quot;,&quot;Noto Sans SC&quot;,sans-serif;background:var(--bg);color:var(--ink);line-height:1.75}
+  a{color:var(--accent)}
+
+  nav{position:sticky;top:0;z-index:50;background:rgba(250,247,242,.92);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+  .nav-inner{max-width:960px;margin:0 auto;padding:10px 20px;display:flex;align-items:center;gap:18px;flex-wrap:wrap}
+  .nav-brand{font-weight:700;color:var(--accent);letter-spacing:.5px}
+  .nav-inner a{font-size:14px;color:var(--ink-soft);text-decoration:none}
+  .nav-inner a:hover{color:var(--accent)}
+
+  header{max-width:960px;margin:0 auto;padding:48px 20px 24px;text-align:center}
+  .gift-tag{display:inline-block;background:var(--gold-soft);color:var(--gold);font-size:13px;padding:4px 14px;border-radius:99px;letter-spacing:2px;margin-bottom:18px}
+  header h1{font-size:32px;letter-spacing:1px;line-height:1.3}
+  header h1 em{font-style:normal;color:var(--accent)}
+  .hero-sub{margin-top:14px;color:var(--ink-soft);font-size:15px}
+
+  main{max-width:960px;margin:0 auto;padding:24px 20px 80px}
+  section{margin-top:40px}
+  h2{font-size:22px;display:flex;align-items:center;gap:10px;margin-bottom:6px}
+  h2 .no{font-size:13px;color:var(--accent);border:1px solid var(--accent);border-radius:6px;padding:1px 8px;font-weight:600}
+  .sec-sub{color:var(--ink-soft);font-size:14px;margin-bottom:18px}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:22px 24px;margin-bottom:16px}
+
+  .tag{display:inline-block;font-size:12px;border-radius:6px;padding:1px 8px;margin-right:6px;vertical-align:2px;white-space:nowrap}
+  .t-hi{color:var(--hi);background:var(--hi-bg)}
+  .t-mid{color:var(--mid);background:var(--mid-bg)}
+  .t-lo{color:var(--lo);background:var(--lo-bg)}
+  .t-main{color:var(--accent);background:var(--accent-soft)}
+  .t-aux{color:var(--ink-soft);background:#f1ece3}
+
+  .score-card{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:18px 22px;display:flex;align-items:center;gap:16px;flex-wrap:wrap;margin-bottom:16px}
+  .score-card .label{font-size:14px;color:var(--ink-soft);white-space:nowrap}
+  .score-card .label b{color:var(--accent);font-size:20px}
+  .bar{flex:1;min-width:180px;height:10px;background:var(--accent-soft);border-radius:99px;overflow:hidden}
+  .bar i{display:block;height:100%;width:0;background:linear-gradient(90deg,#e08b5f,var(--accent));border-radius:99px;transition:width .4s ease}
+  .reset-btn{font-size:12px;color:var(--ink-soft);background:none;border:1px solid var(--line);border-radius:8px;padding:4px 10px;cursor:pointer}
+  .reset-btn:hover{color:var(--hi);border-color:var(--hi)}
+  .hint{font-size:12px;color:var(--ink-soft);margin-top:6px}
+
+  .q{margin-bottom:18px}
+  .q-text{font-size:14px;color:var(--ink);margin-bottom:6px}
+  .opts button{display:block;width:100%;text-align:left;font-size:13.5px;padding:7px 12px;margin:5px 0;border:1px solid var(--line);border-radius:9px;background:#fdfaf5;cursor:pointer;font-family:inherit;color:var(--ink);line-height:1.5}
+  .opts button:hover{border-color:var(--accent)}
+  .opts button.right{border-color:var(--green);background:var(--green-soft);color:var(--green);font-weight:600}
+  .opts button.wrong{border-color:var(--hi);background:var(--hi-bg);color:var(--hi)}
+  .opts button:disabled{cursor:default}
+  .why{font-size:12.5px;color:var(--ink);background:var(--lo-bg);border-radius:8px;padding:8px 12px;margin-top:6px}
+  .reveal-btn{font-size:12.5px;color:var(--accent);background:var(--accent-soft);border:1px solid var(--accent);border-radius:8px;padding:4px 14px;cursor:pointer;font-family:inherit}
+  .model-ans{font-size:13px;color:var(--ink);background:var(--green-soft);border-radius:8px;padding:10px 12px;margin-top:8px;line-height:1.8}
+  .model-ans ul{padding-left:18px}
+  .model-ans li{margin:3px 0}
+
+  .chapter{border:1px solid var(--line);border-radius:var(--radius);background:var(--card);margin-bottom:12px;overflow:hidden}
+  .chapter summary{list-style:none;cursor:pointer;padding:16px 20px;display:flex;align-items:flex-start;gap:14px}
+  .chapter summary::-webkit-details-marker{display:none}
+  .chapter summary:hover{background:#fdfaf5}
+  .ch-title{font-weight:600}
+  .arrow{margin-left:auto;color:var(--line);flex:none;transition:transform .2s}
+  .chapter[open] .arrow{transform:rotate(90deg)}
+  .ch-body{padding:0 20px 18px 20px;font-size:14px;color:var(--ink-soft)}
+
+  .master{display:flex;align-items:center;gap:10px;margin:6px 0 14px;font-size:13px;color:var(--ink-soft);cursor:pointer;user-select:none}
+  .mcb{width:20px;height:20px;border:2px solid var(--accent);border-radius:6px;background:#fff;position:relative;flex:none}
+  .master.on .mcb{background:var(--accent);border-color:var(--accent)}
+  .master.on .mcb::after{content:&quot;✓&quot;;position:absolute;inset:0;color:#fff;font-size:13px;display:flex;align-items:center;justify-content:center}
+  .master.on .mtext{color:var(--green);font-weight:600}
+
+  .note{background:var(--gold-soft);border:1px solid #ecdcb4;border-radius:var(--radius);padding:16px 20px;font-size:14px;color:#7a5c1e;margin-top:16px}
+  .note b{color:#8a6420}
+
+  footer{max-width:960px;margin:0 auto;padding:30px 20px 60px;text-align:center;color:var(--ink-soft);font-size:13px;border-top:1px dashed var(--line)}
+  footer .heart{color:var(--accent)}
+
+  @media (max-width:640px){
+    header h1{font-size:25px}
+  }
+</style>
+</head>
+<body data-page-node-id=&quot;1fjapivfXP2eV37ICYFQxQ&quot;>
+
+<nav data-page-node-id=&quot;TDErFq5NqnulKLPt9bBD5j&quot;>
+  <div class=&quot;nav-inner&quot; data-page-node-id=&quot;l9zRQX1BGsSpuQrxYjUfst&quot;>
+    <span class=&quot;nav-brand&quot; data-page-node-id=&quot;bBvq4OYF2Shm2wDCcBihfZ&quot;>826 题库</span>
+    <a href=&quot;javascript:void(0)&quot; onclick=&quot;parent.postMessage({tikuTop:1},'*')&quot;>← 返回备考手册</a>
+    <a href=&quot;#zhenti&quot; data-page-node-id=&quot;4YADaxt335FGEeqBQjSEnU&quot;>真题自测</a>
+    <a href=&quot;#zhangjie&quot; data-page-node-id=&quot;JyFH5tsPMQID85DwLxCT8d&quot;>章节题库</a>
+  </div>
+</nav>
+
+<header data-page-node-id=&quot;8dXnTcAjBWBn6SGSF9rsFU&quot;>
+  <div class=&quot;gift-tag&quot; data-page-node-id=&quot;sKdCj5pgzNu0lyjd0GM4G3&quot;>✍ 826 配套题库</div>
+  <h1 data-page-node-id=&quot;TFhoCkg2mOaejuNXp8Gq2L&quot;>武汉工程大学 <em data-page-node-id=&quot;fsvd3erEyCqUnhYgPLwJJH&quot;>826 工程项目管理</em><br data-page-node-id=&quot;b8PiSZCvaCO9byUctBoeRA&quot;>真题 + 章节题库</h1>
+  <p class=&quot;hero-sub&quot; data-page-node-id=&quot;URScsmLQFArzHwwWonnvIJ&quot;>真题回忆版 + 丁士昭《工程项目管理》课后习题精选 · 点选项判对错，答案自动保存</p>
+</header>
+
+<main data-page-node-id=&quot;cYBCAfiAHc2tbhRBwl6HdY&quot;>
+
+<!-- ================= 真题自测 ================= -->
+<section id=&quot;zhenti&quot; data-page-node-id=&quot;PNzM9GSNBqfThhuEAKs4CX&quot;>
+  <h2 data-page-node-id=&quot;wzkPvPkmkne6Yf9hn4d16z&quot;><span class=&quot;no&quot; data-page-node-id=&quot;plzip9LqBRl5uG5wHKrZsq&quot;>01</span>真题自测 · 2024 年初试</h2>
+  <p class=&quot;sec-sub&quot; data-page-node-id=&quot;kBjJlSLbJjijzVPX3ATaGd&quot;>2024 年 826 真题（考生回忆整理版）：单选 10 题 + 多选 3 题。点选项立刻判对错，做完看得分。原卷多选共 10 题，后 7 题暂未收集到，拿到完整版可以再补进来。</p>
+
+  <div class=&quot;score-card&quot; data-page-node-id=&quot;SyEaT8VvWJJb4FRNdgdiGk&quot;>
+    <span class=&quot;label&quot; data-page-node-id=&quot;7hqbYPlv2UPyD9xeJbpKiQ&quot;>单选得分 <b id=&quot;mcqScore&quot; data-page-node-id=&quot;LBuWYvQeIwtdC9WAaGZ3Zm&quot;>0</b> / 26</span>
+    <div class=&quot;bar&quot; data-page-node-id=&quot;jBTPXm4RtZqvs42v3BGWfx&quot;><i id=&quot;mcqBar&quot; data-page-node-id=&quot;VbcanZZLJRFzVmZlt0cxXD&quot;></i></div>
+    <span class=&quot;label&quot; id=&quot;mcqDone&quot; data-page-node-id=&quot;raSyE2adHSAnUTqsS9vgiK&quot;>已做 0 / 13 题</span>
+    <button class=&quot;reset-btn&quot; onclick=&quot;resetQuiz()&quot; data-page-node-id=&quot;C6Iyx20YvtGuTEqeFKJk3j&quot;>重做</button>
+  </div>
+  <p class=&quot;hint&quot; data-page-node-id=&quot;6diZfwJdCuxWlEg1PQEbuP&quot;>计分规则：单选 1 题 2 分，多选 1 题 2 分（按原卷单选 10×2 + 多选 10×3 满分 50 分；此处多选按答对即得 2 分估算，仅用于自测参考）。</p>
+
+  <div class=&quot;card&quot; id=&quot;zhenti2024&quot; data-page-node-id=&quot;zO53tzW7DEvFdWyBCgxSYc&quot;>
+    <p style=&quot;font-weight:700;margin-bottom:12px&quot; data-page-node-id=&quot;RzB7Gq99GwoDlraaAEBE3h&quot;><span class=&quot;tag t-main&quot; data-page-node-id=&quot;6wjjPc6hCY9MOk4iZJ0FQh&quot;>一、单项选择题</span>（原卷每题 2 分）</p>
+    <div id=&quot;mcqArea&quot; data-page-node-id=&quot;dCZE6lnGRvi1ByTVjbsvWp&quot;></div>
+    <p style=&quot;font-weight:700;margin:20px 0 12px&quot; data-page-node-id=&quot;HxvaFwf7uNTr8rouLG4utW&quot;><span class=&quot;tag t-mid&quot; data-page-node-id=&quot;ESpg1hYEJRjs9k76Qwiyb4&quot;>二、多项选择题</span>（多选、错选不得分；原卷每题 3 分）</p>
+    <div id=&quot;multiArea&quot; data-page-node-id=&quot;qKTdG23HdNHvzma75UCkJd&quot;></div>
+  </div>
+
+  <div class=&quot;card&quot; style=&quot;margin-top:16px&quot; data-page-node-id=&quot;M4I0QCeuRHiFN4ydRqIqrO&quot;>
+    <p style=&quot;font-weight:700;margin-bottom:10px&quot; data-page-node-id=&quot;5r1Futg4I0WhCrbtXDlwI4&quot;><span class=&quot;tag t-hi&quot; data-page-node-id=&quot;dVb7E0lJ6rWDtanIWlqlno&quot;>回忆版</span>2018 年初试真题（回忆版 · 全卷结构）</p>
+    <p class=&quot;hint&quot; style=&quot;margin-bottom:10px&quot; data-page-node-id=&quot;WGC0PVdr1arBCE23apGWLd&quot;>原卷结构：单选 10 × ? 分 + 多选 10 × ? 分 + 简答 4 题 + 计算 2 题 + 论述 1 题。单选/多选原始题目未流传，下面是文字题部分及参考答题要点。</p>
+    <div id=&quot;paper2018&quot; data-page-node-id=&quot;HMXKsbqqijtUnhODOFnsLd&quot;></div>
+  </div>
+</section>
+
+<!-- ================= 章节题库 ================= -->
+<section id=&quot;zhangjie&quot; data-page-node-id=&quot;l5GlzyWjVhXFZzXzg3EH99&quot;>
+  <h2 data-page-node-id=&quot;MAZG7Ac5CM7Z5cTbpFjb3r&quot;><span class=&quot;no&quot; data-page-node-id=&quot;5gm8tacvIgkyzyFWubMVJq&quot;>02</span>章节题库 · 丁士昭《工程项目管理》课后习题精选</h2>
+  <p class=&quot;sec-sub&quot; data-page-node-id=&quot;anH1rCAPXnsUvLurfJxJPT&quot;>按大纲对应章节整理。先自己作答（口头说或写在纸上），再点「看参考答案」对照。掌握了的点「已掌握」，进度自动保存。</p>
+  <div id=&quot;chapters&quot; data-page-node-id=&quot;0lNTcbExy1DVPCkLFufH5i&quot;></div>
+
+  <div class=&quot;note&quot; data-page-node-id=&quot;OGnXaKxwbCzNJrcXPEEGVz&quot;><b data-page-node-id=&quot;kAI4ARvLqziazvoNNuHuy8&quot;>关于题库来源：</b>真题为考生回忆整理版，非官方发布；参考答案依据丁士昭教材及相关公开资料整理，供备考参考，非官方标准答案——主观题按点给分，意思对即可。2022 年真题有存档记录但内容未公开流传，如拿到可补充。建议再向直系学长学姐收集 2023、2025 年真题。</div>
+</section>
+
+</main>
+
+<footer data-page-node-id=&quot;MgzAsvpsynMhkwY2DbnJQ9&quot;>
+  <p data-page-node-id=&quot;fWGceuVjqoaqTEZHumTFn2&quot;>刷过的每一道题，都是考场上的底气。<span class=&quot;heart&quot; data-page-node-id=&quot;5Vn1u7l0tFUYaanQLU0GQS&quot;>♥</span></p>
+  <p style=&quot;margin-top:6px&quot; data-page-node-id=&quot;BmeO5iMtfPRHImjgZzCfeC&quot;>826 工程项目管理 · 配套题库 · 2027 大纲版</p>
+</footer>
+
+<script>
+  /* ================= 真题数据 ================= */
+  const MCQ = [
+    { q:&quot;1. 对于一个建设工程项目而言，（　）的项目管理往往是该项目的项目管理的核心。&quot;, o:[&quot;设计方&quot;,&quot;施工方&quot;,&quot;供货方&quot;,&quot;业主方&quot;], a:3, why:&quot;业主方是建设工程项目生产过程的总集成者和总组织者，业主方的项目管理是该项目项目管理的核心。&quot; },
+    { q:&quot;2. 工作流程组织的任务是（　）。&quot;, o:[&quot;明确工作的定义&quot;,&quot;明确任务分配&quot;,&quot;定义工作的流程&quot;,&quot;划分工作流程&quot;], a:2, why:&quot;工作流程组织的任务是定义工作的流程，如管理工作流程、信息处理工作流程和物质流程的组织。&quot; },
+    { q:&quot;3. 施工总承包模式下，与分包商签订分包合同的是（　）。&quot;, o:[&quot;总承包管理单位&quot;,&quot;业主&quot;,&quot;总承包单位&quot;,&quot;监理单位&quot;], a:2, why:&quot;施工总承包模式下，由施工总承包单位与分包商签订分包合同，业主只与总承包单位签约。&quot; },
+    { q:&quot;4. 投资的计划值和实际值是相对的，相对于工程预算而言，下列属于投资计划值的是（　）。&quot;, o:[&quot;工程合同价&quot;,&quot;工程初步设计概算&quot;,&quot;工程结算价&quot;,&quot;招标标底&quot;], a:1, why:&quot;投资的计划值与实际值比较遵循『前者为计划、后者为实际』的先后链条：初步设计概算在工程预算（施工图预算）之前形成，故相对于工程预算，初步设计概算是计划值。&quot; },
+    { q:&quot;5. 在双代号网络图中，需要应用虚箭线来表示工作之间的（　）。&quot;, o:[&quot;时间间隔&quot;,&quot;搭接关系&quot;,&quot;逻辑关系&quot;,&quot;自由时差&quot;], a:2, why:&quot;虚箭线不消耗时间和资源，仅用于正确表达工作之间的逻辑关系（联系、区分和断开）。&quot; },
+    { q:&quot;6. 施工合同履行中，由于设计变更需要确定变更价款，而报价单中没有适用于变更工作的单价，则计算变更合同价款应（　）计算。&quot;, o:[&quot;按工程师提出的单价&quot;,&quot;按承包人提出的单价&quot;,&quot;按设计单位提出的单价&quot;,&quot;参照报价单内类似工作的单价&quot;], a:3, why:&quot;合同价款变更的一般原则：合同中有适用于变更工程的单价，按合同已有单价；合同中只有类似单价的，参照类似单价；都没有的，由承包人提出、监理（工程师）确认后执行。&quot; },
+    { q:&quot;7. 施工工程竣工验收通过后，确定承包人的实际竣工日应为（　）。&quot;, o:[&quot;承包人送交竣工验收报告日&quot;,&quot;发包人组织竣工验收日&quot;,&quot;开始进行竣工检验日&quot;,&quot;验收组通过竣工验收日&quot;], a:0, why:&quot;通用合同条款惯例：工程实际竣工日期以承包人提交竣工验收申请（报告）之日为准。&quot; },
+    { q:&quot;8. 招标人对已发出的招标文件进行必要的澄清或者修改的，应当在招标文件要求提交投标文件截止时间至少（　）日前，以书面形式通知所有招标文件的收受人。&quot;, o:[&quot;10&quot;,&quot;15&quot;,&quot;20&quot;,&quot;25&quot;], a:1, why:&quot;《招标投标法》规定：澄清或修改的内容可能影响投标文件编制的，应在截止时间至少 15 日前书面通知所有收受人；不足 15 日的，应顺延截止时间。&quot; },
+    { q:&quot;9. 为确保施工质量，使施工顺利进行，最关键应做好（　）控制。&quot;, o:[&quot;单位工程质量&quot;,&quot;分部工程质量&quot;,&quot;分项工程质量&quot;,&quot;工序质量&quot;], a:3, why:&quot;施工过程由一道道工序组成，工序质量是分项、分部、单位工程质量的基础，工序质量控制是施工质量控制最关键的环节。&quot; },
+    { q:&quot;10. 投资控制的重点应放在（　）阶段。&quot;, o:[&quot;准备&quot;,&quot;设计&quot;,&quot;实施&quot;,&quot;交付使用&quot;], a:1, why:&quot;项目决策和设计阶段对投资（造价）的影响程度最大——设计阶段影响投资的可能性可达 70% 以上，而施工阶段的影响通常不足 10%，故投资控制的重点在设计（施工以前）阶段。&quot; }
+  ];
+
+  const MULTI = [
+    { q:&quot;11. 建设工程项目的全寿命周期包括项目的（　）。&quot;, o:[&quot;决策阶段&quot;,&quot;设计阶段&quot;,&quot;实施阶段&quot;,&quot;使用阶段&quot;,&quot;施工阶段&quot;], a:[0,2,3], why:&quot;全寿命周期 = 决策阶段 + 实施阶段 + 使用阶段。设计阶段和施工阶段都包含在实施阶段之内，单独选 B/E 属于重复归类。&quot; },
+    { q:&quot;12. 常用的组织结构模式包括（　）。&quot;, o:[&quot;职能制组织结构&quot;,&quot;线性组织结构&quot;,&quot;矩阵式组织结构&quot;,&quot;网络组织结构&quot;,&quot;交叉组织结构&quot;], a:[0,1,2], why:&quot;常用的组织结构模式有三种：职能组织结构、线性组织结构和矩阵组织结构；『网络』『交叉』不是规范提法。&quot; },
+    { q:&quot;13. 项目目标动态控制的纠偏措施包括（　）。&quot;, o:[&quot;组织措施&quot;,&quot;管理措施&quot;,&quot;计划措施&quot;,&quot;经济措施&quot;,&quot;技术措施&quot;], a:[0,1,3,4], why:&quot;纠偏措施四类：组织措施、管理措施（含合同措施）、经济措施、技术措施；没有『计划措施』这一类。&quot; }
+  ];
+
+  const PAPER2018 = [
+    { t:&quot;简答题&quot;, items:[
+      { q:&quot;1. 工程项目建造阶段的划分和主要内容&quot;, a:&quot;建造（施工）阶段一般划分为：①施工准备阶段：图纸会审、施工组织设计编制、场地与资源准备、开工手续；②施工实施阶段：按计划组织人材机进场施工，进行进度、质量、成本、安全四大控制，以及合同、信息管理与组织协调；③竣工验收阶段：自检与预验收、竣工验收与备案、工程移交与竣工结算、保修与回访。答题按『准备—实施—验收』三段展开，每段写 2~3 条主要内容。&quot; },
+      { q:&quot;2. 招标方式有哪些？对比分析&quot;, a:&quot;①公开招标：无限竞争性招标，公告面向全社会，竞争充分、选择面广，利于降低造价，但招标周期长、工作量大、可能混入投标动机不纯者；②邀请招标：有限竞争性招标，向 3 家以上具备能力、资信良好的特定法人发出邀请，效率高、周期短、投标人质量有保证，但竞争不够充分、易滋生围标串标，且限制了竞争范围。答题时先分列两种方式，再从竞争性、周期成本、适用条件三方面对比。&quot; },
+      { q:&quot;3. 工程质量控制要点&quot;, a:&quot;①坚持『质量第一、预防为主』方针，以 PDCA 循环开展质量控制；②控制影响质量的五大因素：人、机、料、法、环；③抓好三个阶段：事前控制（质量计划、技术交底、材料设备检验）、事中控制（工序质量控制、隐蔽工程验收、旁站与巡视）、事后控制（检验批—分项—分部—单位工程逐级验收）；④落实参与各方质量责任与质量终身责任制。&quot; },
+      { q:&quot;4. 风险管理的主要工作内容&quot;, a:&quot;①风险识别：收集资料，运用专家调查、流程图、初始风险清单等方法识别风险因素，编制风险清单；②风险评估（评价）：估计风险发生概率与损失量，确定风险量等级；③风险应对：针对不同等级选择规避、减轻、转移（含保险）、自留等策略并形成计划；④风险监控：跟踪风险动态，预警偏差，动态调整应对措施。即『识别—评估—应对—监控』四步闭环。&quot; }
+    ]},
+    { t:&quot;计算题&quot;, items:[
+      { q:&quot;1. 绘双代号网络图，求总工期、计算时间参数并标记关键线路（题目数据为现场回忆，练法通用）&quot;, a:&quot;答题步骤：①按工作逻辑关系绘制双代号网络图（注意虚箭线使用、编号规则：箭尾号小于箭头号）；②用工作计算法顺推求各工作最早开始时间 ES、最早完成 EF → 确定计算工期；③逆推求各工作最迟完成 LF、最迟开始时间 LS；④计算总时差 TF＝LS－ES（＝LF－EF）和自由时差 FF；⑤TF＝0 的工作连成的线路即为关键线路，其总持续时间即总工期。练熟『顺推取大、逆推取小』口诀。&quot; },
+      { q:&quot;2. 索赔案例题（业主 A—监理 B—设备制造厂 C—承包商 D）&quot;, a:&quot;案情：C 比合同约定提前 3 天交货，D 以工作面有限拒绝其进场；经监理协调，C 晚 5 天才进场安装，窝工损失 1 万元/天。C 向 D 提出 5 万元费用索赔和 5 天工期顺延，D 拒绝；C 又向监理提出索赔，业主以自己无过错为由让监理拒绝。参考要点：(a) 直线型监理组织：总监理工程师下设两个监理组，第一组被监理单位为 C（设备安装调试），第二组为 D（辅助材料加工）；(b) D 存在违约行为——未按约定提供进场条件、阻挠 C 按期安装；(c) 从合同关系看，C 与 D 之间无合同关系，C 直接向 D 索赔于法无据（不成立），应通过合同渠道（向业主方主张，业主再依合同向责任方追偿）解决；(d) 业主的做法不正确——索赔处理不以『业主有无过错』为前提，凡非承包人自身原因造成损失，监理应按合同程序受理并公正处理；(e) 监理工程师应：核实窝工事实与证据 → 确认 5 万元窝工费用合理性 → 判断该设备安装工作是否位于关键线路（是则批准 5 天工期顺延，否则不予顺延）→ 按合同约定发出处理决定并协调双方。&quot; }
+    ]},
+    { t:&quot;论述题&quot;, items:[
+      { q:&quot;施工单位对工程项目的建造施工管理的主要内容和方法&quot;, a:&quot;答题框架（定义 → 内容 → 方法 → 小结）：一、含义：施工方按承包合同界定的范围，对施工全过程进行计划、组织、指挥、协调和控制的活动。二、主要内容：①施工成本控制；②施工进度控制；③施工质量控制；④施工安全管理（最重要的任务，关系人身安全）；⑤施工合同管理；⑥施工信息管理；⑦与施工有关的组织与协调。三、主要方法：①目标管理＋动态控制原理（计划值与实际值定期比较、纠偏）；②PDCA 循环贯穿各管理过程；③运用组织工具：任务分工表、管理职能分工表、工作流程组织；④网络计划技术编制与优化进度计划；⑤挣值法进行成本—进度综合监控；⑥信息化手段（PMIS/BIM）辅助管理。四、小结：施工管理以合同为依据、以目标控制为核心，四大目标（成本、进度、质量、安全）对立统一，需统筹平衡、动态纠偏。&quot; }
+    ]}
+  ];
+
+  /* ================= 章节题库数据（课后习题精选） ================= */
+  const CHAPTERS = [
+    { ch:&quot;第 1 章　概论&quot;, src:&quot;丁士昭《工程项目管理》P1~13&quot;, qs:[
+      { t:&quot;简答&quot;, q:&quot;为什么没有明确目标的建设工程不是项目管理的对象？&quot;, a:&quot;只有明确目标（投资、进度、质量）的建设工程才称为项目管理意义上的『项目』；没有明确目标的项目不需要控制，也无法控制，因而不是项目管理的对象。&quot; },
+      { t:&quot;简答&quot;, q:&quot;请分析工程管理包括的范畴及其核心任务。&quot;, a:&quot;范畴：项目前期的开发管理（DM）＋项目管理（PM）＋设施管理（FM），涉及项目全过程和各参与方的管理。核心任务：①为工程建设增值——确保工程建设安全、提高工程质量、进行投资（成本）控制和进度控制；②为工程使用（运行）增值——确保使用安全、有利于环保和节能、满足最终用户使用功能、降低运营维护成本。&quot; },
+      { t:&quot;简答&quot;, q:&quot;请阐述工程项目管理的含义。&quot;, a:&quot;《建设工程项目管理规范》：运用系统的理论和方法，对工程项目进行计划、组织、指挥、协调和控制等专业化活动。CIOB 表述：自项目开始至项目完成，通过项目策划和项目控制，以使项目的费用目标、进度目标和质量目标得以实现。要点：『自项目开始至项目完成』指项目实施期；『项目策划』是目标控制前的筹划准备；『费用目标』对业主是投资目标、对施工方是成本目标。决策期的主要任务是确定项目定义，实施期的主要任务是使项目目标得以实现。&quot; },
+      { t:&quot;简答&quot;, q:&quot;请分析项目各参与方项目管理的目标和任务。&quot;, a:&quot;五方参与：①业主方：服务业主利益，目标为投资、进度、质量；管理覆盖实施阶段全过程（设计前准备、设计、施工、动用前准备、保修期），任务为安全、投资、进度、质量控制＋合同、信息管理＋组织协调，其中安全管理最重要；②设计方：目标含设计成本、进度、质量及项目投资目标；③施工方：目标含施工成本、进度、质量，任务为施工全过程管理；④供货方；⑤项目总承包方。答题按『目标—任务—阶段』分别展开。&quot; }
+    ]},
+    { ch:&quot;第 2 章　项目管理的组织理论&quot;, src:&quot;丁士昭《工程项目管理》P35~42 等&quot;, qs:[
+      { t:&quot;简答&quot;, q:&quot;请分析管理任务分工和管理职能分工的意义。&quot;, a:&quot;编制项目管理任务分工表前，应先对项目实施各阶段的费用（投资/成本）控制、进度控制、质量控制、合同管理、信息管理和组织协调等管理任务进行详细分解，在此基础上明确每项任务由哪个部门（个人）负责、哪些配合或参与，并随项目进展动态调整。意义：明确职责界面、避免推诿扯皮、使指令流和工作流有据可依。管理职能分工则明确每项任务的计划、决策、执行、检查由谁承担。&quot; },
+      { t:&quot;简答&quot;, q:&quot;什么是项目管理规划？它应确定哪些内容？&quot;, a:&quot;项目管理规划是指导项目管理的纲领性文件，应对项目管理的目标、依据、内容、组织、资源、方法、程序和控制措施进行确定。&quot; },
+      { t:&quot;简答&quot;, q:&quot;建设项目组织（组织设计）包括哪些内容？&quot;, a:&quot;①项目结构分解；②合同结构；③项目管理组织结构；④工作任务分工；⑤管理职能分工；⑥工作流程组织。&quot; }
+    ]},
+    { ch:&quot;第 3 章　项目策划&quot;, src:&quot;丁士昭《工程项目管理》P60 前后&quot;, qs:[
+      { t:&quot;简答&quot;, q:&quot;项目策划的含义是什么？&quot;, a:&quot;项目策划是在项目建设前期，通过调查研究和收集资料，在充分占有信息的基础上，针对项目决策和实施的问题进行组织、管理、经济和技术方面的科学分析和论证，旨在为项目建设的决策和实施增值。&quot; },
+      { t:&quot;简答&quot;, q:&quot;项目策划有哪些特点？&quot;, a:&quot;①充分占有信息；②重视雷同建设项目的经验和教训的分析；③坚持开放型的工作原则；④策划是一个知识管理的过程；⑤策划是一个创新求增值的过程；⑥策划是一个动态过程。&quot; },
+      { t:&quot;简答&quot;, q:&quot;项目策划可分为哪几种类型？&quot;, a:&quot;①项目决策的策划：在项目决策阶段完成，为项目决策服务，回答『建什么、为什么建』，又称项目决策评估；②项目实施的策划：在项目实施阶段的前期完成，为项目管理服务，主要确定『怎么建』，又称项目实施评估。两者统称项目策划。&quot; },
+      { t:&quot;简答&quot;, q:&quot;环境调查有哪些工作内容和工作方法？&quot;, a:&quot;内容：①项目周边自然环境和条件；②开发时期的市场环境；③宏观经济环境；④所在地政策环境；⑤建设条件环境（能源、基础设施等）；⑥历史、文化环境；⑦建筑环境；⑧其他相关问题。方法：①现场实地考察；②相关部门走访；③有关人员访谈；④文献调查与研究；⑤问卷调查。&quot; },
+      { t:&quot;简答&quot;, q:&quot;项目决策策划和实施策划的含义是什么？&quot;, a:&quot;决策策划针对项目决策阶段：通过对前期环境调查与分析，进行项目建设基本目标的论证与分析、项目定义、功能分析和面积分配，并在此基础上对与决策有关的组织、管理、经济与技术方面进行论证与策划，为决策提供依据。实施策划在项目立项之后：为把决策付诸实施而形成具有可行性、可操作性和指导性的实施方案，又称项目实施方案或项目实施规划。&quot; }
+    ]},
+    { ch:&quot;第 4 章　工程项目目标控制基本原理&quot;, src:&quot;丁士昭《工程项目管理》P90~106&quot;, qs:[
+      { t:&quot;简答&quot;, q:&quot;什么是主动控制，什么是被动控制，各有什么特点？&quot;, a:&quot;主动控制：预先分析目标偏离的可能性，拟订并采取各项预防性措施，使计划目标得以实现——面向未来，是前馈控制、事前控制。被动控制：对计划实施进行跟踪，将输出信息加工整理后传递给控制人员，发现问题、找出偏差、确定并实施纠偏方案，使目标一旦偏离即被纠正——是反馈控制。&quot; },
+      { t:&quot;简答&quot;, q:&quot;简述建设项目目标动态控制的工作步骤。&quot;, a:&quot;第一步：动态控制准备——将项目目标（投资/成本、进度、质量）进行分解，确定用于控制的计划值；第二步：实施过程中对目标进行动态跟踪和控制（收集实际值、定期比较计划值与实际值、发现偏差采取纠偏措施）；第三步：如有必要进行项目目标调整，调整后控制过程再回复到第一步。&quot; },
+      { t:&quot;简答&quot;, q:&quot;简述 PDCA 循环原理的主要内容。&quot;, a:&quot;PDCA 由计划（Plan）、实施（Do）、检查（Check）、处置（Action）四阶段组成，是目标控制的基本方法：①计划：明确目标并制定实现目标的行动方案；②实施：进行方案交底，按计划规定的方法与要求展开作业技术活动；③检查：含自检、互检、专检，一是检查是否严格执行了方案、条件是否变化、不执行的原因，二是检查产出质量是否达到标准；④处置：总结经验、巩固成绩，对问题分析原因、予以纠正和预防。关键在于通过处置环节把问题带入下一个循环解决，使质量不断改进上升。&quot; },
+      { t:&quot;简答&quot;, q:&quot;投资控制中，设计阶段和施工阶段各进行哪些计划值与实际值的比较？&quot;, a:&quot;设计阶段：①初步设计概算与投资估算的比较；②初步设计修正概算与初步设计概算的比较；③施工图预算与初步设计概算（修正概算）的比较。施工阶段：①施工合同价与初步设计概算的比较；②招标标底与初步设计概算的比较；③施工合同价与招标标底的比较；④工程结算价与施工合同价的比较；⑤工程结算价与资金使用计划（月/季/年）的比较；⑥资金使用计划与初步设计概算的比较；⑦工程竣工决算价与初步设计概算的比较。&quot; },
+      { t:&quot;简答&quot;, q:&quot;简述项目目标动态控制的纠偏措施。&quot;, a:&quot;①组织措施：调整项目组织结构、任务分工、管理职能分工、工作流程组织和项目管理班子成员等；②管理措施（含合同措施）：调整管理方法与手段、改变施工管理方式、强化合同管理等；③经济措施：落实资金、调整资金使用计划等；④技术措施：调整设计、改进施工方法、改变施工机具等。&quot; },
+      { t:&quot;简答&quot;, q:&quot;简述风险的概念、内涵和特性。&quot;, a:&quot;概念：风险指损失的不确定性，建设项目风险指可能出现的影响项目目标实现的不确定因素。内涵：风险与不确定性、风险与损失、风险的可靠度性三方面。特性：客观性、随机性、相对性、可变性。&quot; },
+      { t:&quot;简答&quot;, q:&quot;风险管理的程序是什么？&quot;, a:&quot;①风险识别；②风险评估（分析发生概率与损失、确定风险等级）；③风险应对（制定并实施应对策略与计划）；④风险监控（跟踪预警、动态调整）。四步形成闭环，贯穿项目全过程。&quot; }
+    ]},
+    { ch:&quot;第 5 章　工程项目采购管理&quot;, src:&quot;丁士昭《工程项目管理》相关章节&quot;, qs:[
+      { t:&quot;简答&quot;, q:&quot;施工总承包模式与施工总承包管理模式下，分包付款和合同价格有何不同？&quot;, a:&quot;①分包付款：施工总承包管理模式下，分包工程款项可由总承包管理单位支付，也可由业主直接支付（需经总承包管理单位认可）；施工总承包模式下，各分包单位工程款一般由施工总承包单位负责支付。②合同价格：总承包管理合同中一般只确定总承包管理费（按建安造价一定百分比计取），无需事先确定建安总造价——这也是其招标可不依赖施工图出齐的原因；分包合同一般采用单价合同或总价合同。&quot; },
+      { t:&quot;简答&quot;, q:&quot;什么是 CM 模式，它适用于什么样的项目？&quot;, a:&quot;CM 模式：业主委托 CM 单位，以承包商身份采用 Fast-Track（快速路径法）组织生产，进行施工管理、直接指挥施工活动，并在一定程度上影响设计活动；CM 单位与业主的合同通常采用 Cost Plus（成本加酬金）方式。适用：①项目组成或参与单位复杂、对变更灵活性要求高、技术不够成熟；②建设周期长、工期要求紧，不能等设计全部完成再招标；③投资量大、规模大（如群体高层、智能化大厦）；④工作范围不确定而无法准确定价。不宜采用：规模小工期短、设计已标准化、施工图已完成、技术成熟的简单项目。&quot; },
+      { t:&quot;简答&quot;, q:&quot;采购方式的发展趋势有哪些？&quot;, a:&quot;①D+D+B（Develop＋Design＋Build）：受委托方负责项目前期决策策划、设计和施工；②D+B+FM（Design＋Build＋Facility Management）：负责设计、施工和物业管理；③F+P+D+B+FM（Finance＋Procurement＋Design＋Build＋FM）：负责融资、采购、设计、施工和物业管理的一体化总承包。趋势是承包范围不断向前端（策划、融资）和后端（运维）延伸。&quot; },
+      { t:&quot;简答&quot;, q:&quot;建设项目常用的采购模式有哪些？&quot;, a:&quot;①DBB（设计—招标—建造）模式；②DB（设计—建造）模式；③EPC（设计—采购—建设）模式；④CM（建设管理）模式；⑤PM（项目管理）模式；⑥BOT（建设—经营—移交）模式；⑦PPP（政府与社会资本合作）模式；⑧Partnering（伙伴关系）模式；⑨IPD（综合项目交付）模式。答题时按『名字—缩写—一句话特点』逐条展开。&quot; }
+    ]},
+    { ch:&quot;第 6 章　工程项目投资控制&quot;, src:&quot;丁士昭《工程项目管理》P150~167&quot;, qs:[
+      { t:&quot;简答&quot;, q:&quot;工程项目投资控制的含义和任务是什么？&quot;, a:&quot;含义：以建设工程项目为对象，为在投资计划值内实现项目而对工程建设活动中的投资所进行的规划、控制和管理。任务贯穿设计阶段、施工阶段、竣工验收阶段，通过动态控制原理对投资计划值与实际值持续比较和纠偏。&quot; },
+      { t:&quot;简答&quot;, q:&quot;投资控制的基本原理是什么？&quot;, a:&quot;①遵循动态控制原理：对计划投资目标值进行分析论证 → 收集投资实际数据 → 投资计划值与实际值比较 → 制定各类控制报告和报表 → 投资偏差分析；②分阶段设置控制目标（投资估算→概算→预算→合同价→结算价→决算，前者控制后者）；③采取多种有效控制措施（技术措施＋经济措施＋组织＋合同措施相结合）；④立足全寿命周期的控制。&quot; },
+      { t:&quot;简答&quot;, q:&quot;为什么说设计阶段是投资控制工作的重点？&quot;, a:&quot;项目决策与设计阶段对投资的影响程度最大：初步设计阶段影响投资的可能性约为 75%~95%，技术设计约 35%~75%，施工图设计约 10%~35%，而施工阶段通常不足 10%。方案一旦实施，纠偏成本极高；设计阶段只需优化方案即可大幅节约投资，故是投资控制的重点。&quot; },
+      { t:&quot;简答&quot;, q:&quot;试简述价值工程的原理及应用意义。&quot;, a:&quot;原理：价值工程是运用集体智慧和有组织的活动，对研究对象的功能与费用进行系统分析并不断创新，使研究对象以最低的总费用可靠地实现其必要功能，从而提高研究对象价值（V＝F/C）的思想方法和管理技术。意义：是投资控制的有效方法之一；虽然在产品形成的各阶段都可应用，但不同阶段进行价值工程活动的经济效果提高幅度大不相同——越早应用效果越显著。&quot; },
+      { t:&quot;简答&quot;, q:&quot;试述限额设计的应用方法。&quot;, a:&quot;限额设计是按批准的投资限额（估算、概算）进行设计，将投资限额按专业分解到各设计单位、各专业和各单位工程，在保证使用功能的前提下按限额进行方案设计、初步设计和施工图设计；设计过程中进行投资跟踪比较，发现超限额及时优化设计方案；对确实需要突破限额的，须经原审批程序批准。要点：目标分解 → 按限额设计 → 过程跟踪 → 动态优化。&quot; },
+      { t:&quot;简答&quot;, q:&quot;按工程量清单计价，招标人的核心工作是什么？&quot;, a:&quot;由于工程量清单是招标文件的组成部分，招标人必须编制出准确的工程量清单并承担相应风险（工程量准确性风险由招标人承担）；这可以促进招投标双方提高管理水平，为投标人公平竞争提供统一平台。&quot; },
+      { t:&quot;简答&quot;, q:&quot;控制招标项目价格有哪些方法？&quot;, a:&quot;通过市场竞争优选建设队伍和技术方案，有效转移风险并获得合理的工程价格合同；发包过程应力求市场化运作，采用招标竞争方式锁定合同价格；精心策划招标方案和招标文件内容（工程范围、界面清晰、清单准确），并采用科学的评标方法。高质量的招标文件和科学的评标方法对确保工程质量、工期、降低造价至关重要。&quot; },
+      { t:&quot;简答&quot;, q:&quot;试简述项目投资规划的概念和作用。&quot;, a:&quot;概念：投资规划是在项目实施前期，对投资目标进行分析论证并进行投资目标的分解，为投资控制制定依据和方案的工作。作用：①投资目标的分析和论证；②投资目标的合理分解；③控制方案的制定与实施。&quot; },
+      { t:&quot;简答&quot;, q:&quot;试简述投资规划的主要内容和编制程序。&quot;, a:&quot;主要内容：①投资目标的分析和论证；②投资目标的分解；③投资控制的工作流程；④投资目标的风险分析；⑤投资控制工作制度。编制程序：①项目总体构思和功能描述；②计算和分配投资费用；③投资目标的分析和论证；④投资方案的调整；⑤投资目标的分解。&quot; }
+    ]},
+    { ch:&quot;第 7 章　网络计划技术与进度管理 ★计算题重灾区&quot;, src:&quot;丁士昭《工程项目管理》相关章节＋丛培经教材算例&quot;, qs:[
+      { t:&quot;简答&quot;, q:&quot;网络计划技术如何分类？&quot;, a:&quot;①按工作之间逻辑关系和持续时间的确定程度分：肯定型网络计划、非肯定型网络计划；②按基本元素（节点和箭线）的含义分：双代号网络计划（工作箭线网络）、单代号网络计划（工作节点网络）、单代号搭接网络计划、事件节点网络计划；③按目标数量分：单目标网络计划（只有一个终点节点）和多目标网络计划（终点节点不止一个）。&quot; },
+      { t:&quot;计算&quot;, q:&quot;双代号网络计划计算通法（对应大纲『时间参数计算、关键线路』必考点）&quot;, a:&quot;设某网络：起点→A(3)→B(5)→终点，A→C(2)→D(6)→终点。解：①列线路：A→B＝3＋5＝8 天；A→C→D＝3＋2＋6＝11 天；②总工期＝最长线路＝11 天；③关键线路＝A→C→D（总时差为零）。时间参数计算口诀：顺推取大求最早（ES/EF）、逆推取小求最迟（LF/LS）、总时差＝LS−ES、自由时差＝紧后工作最早开始的最小值减本工作最早完成。考试建议：画图规范、标出六个时间参数、关键线路用双线或加粗标注。&quot; }
+    ]},
+    { ch:&quot;第 8 章　质量与安全管理&quot;, src:&quot;丁士昭《工程项目管理》P233~258&quot;, qs:[
+      { t:&quot;简答&quot;, q:&quot;简述我国工程项目质量管理制度。&quot;, a:&quot;①建设工程质量监督管理制度；②施工图设计文件审查制度；③建设工程竣工验收备案制度；④建设工程质量事故报告制度；⑤建设工程质量监测（检测）制度；⑥建设工程质量保修制度；⑦质量认证制度。&quot; },
+      { t:&quot;简答&quot;, q:&quot;简述建设参与各方的质量责任和义务。&quot;, a:&quot;①建设单位：依法发包、提供资料、组织竣工验收备案等；②勘察、设计单位：按强制性标准勘察设计、对其成果质量负责；③施工单位：按图施工、对施工质量负责、建立健全自检体系；④工程监理单位：依法监理、代表业主对施工质量实施监督，承担相应监理责任。答题时逐方展开一句话要点，具体条文结合教材复习。&quot; },
+      { t:&quot;简答&quot;, q:&quot;简述工程施工质量验收的概念和方法。&quot;, a:&quot;概念：在施工单位自行质量检查评定的基础上，参与建设活动的有关单位共同对工程施工质量进行抽查复验，根据相关标准以书面形式对施工质量合格与否作出确认。方法：按检验批→分项工程→分部工程→单位工程的顺序逐级验收，检验批是验收的最小单元；以书面形式（验收记录/报告）确认，依据国家验收标准。&quot; },
+      { t:&quot;简答&quot;, q:&quot;简述我国安全生产管理体制和安全管理原则。&quot;, a:&quot;管理体制：企业负责、政府监管、行业自律、职工参与、社会监督（各方安全责任见教材 P248~249）。原则：①安全第一；②预防为主；③『四全』动态安全管理（全员、全过程、全方位、全天候）。&quot; },
+      { t:&quot;简答&quot;, q:&quot;简述安全教育的内容和基本要求。&quot;, a:&quot;内容：①安全生产思想教育；②安全知识教育；③安全技能教育。基本要求：新工人（含劳务人员）进场必须经公司、项目部、班组三级安全教育并考核合格方可上岗；特殊工种（电工、焊工、架子工等）必须持证上岗并定期复训；转岗、复工、季节性及采用新技术新工艺前均须重新教育。&quot; },
+      { t:&quot;简答&quot;, q:&quot;简述安全技术措施计划和施工安全技术措施。&quot;, a:&quot;安全技术措施计划：企业从全局出发编制的年度或数年间安全技术工作规划，是企业财务计划的组成部分，对保证安全生产、保护生产力、提高劳动生产率非常必要。施工安全技术措施：针对工程特点、现场环境、施工方法、劳动组织、作业方法、机械设备、配电设施、架设工具及各项安全防护设施等制定的确保安全施工的措施（主要内容见教材 P254）。&quot; },
+      { t:&quot;简答&quot;, q:&quot;简述安全检查的内容、形式和方法。&quot;, a:&quot;内容：查思想、查制度、查机械设备、查安全措施、查安全教育培训、查操作行为、查劳保用品使用、查伤亡事故处理（『八查』）。形式：①针对主要问题的专项检查；②定期安全检查；③专业性安全检查；④经常性安全检查；⑤季节性及节假日前后安全检查。方法：安全检查表和实测实量。&quot; },
+      { t:&quot;简答&quot;, q:&quot;简述建筑施工伤亡事故的主要类别。&quot;, a:&quot;①高处坠落；②物体打击；③触电事故；④机械伤害；⑤坍塌事故；⑥火灾爆炸。这六类是施工现场事故预防的重点（常考选择题，可结合每类一句预防措施展开）。&quot; },
+      { t:&quot;简答&quot;, q:&quot;简述建筑施工现场安全管理的主要工作。&quot;, a:&quot;①建立安全管理体系和安全生产责任制，配置专职安全员；②开展三级安全教育与培训；③编制施工组织设计中的安全技术措施和专项施工方案（深基坑、高支模等危大工程须专家论证）；④现场安全防护设施与文明施工；⑤安全检查与隐患排查治理；⑥应急管理（预案、演练、事故报告与处理）。&quot; }
+    ]}
+  ];
+
+  /* ================= 通用工具 ================= */
+  const KEYQ = 'wit826-tiku';
+  function loadQ(){ try{ return JSON.parse(localStorage.getItem(KEYQ)) || {}; }catch(e){ return {}; } }
+  function saveQ(d){ localStorage.setItem(KEYQ, JSON.stringify(d)); }
+
+  /* ================= 真题渲染 ================= */
+  const scoreState = { answered:{}, correct:0, done:0 };
+
+  function buildChoice(area, list, multi){
+    list.forEach((m, i) => {
+      const id = (multi?'m':'s') + i;
+      const q = document.createElement('div'); q.className = 'q';
+      const head = document.createElement('div'); head.className = 'q-text'; head.textContent = m.q;
+      const opts = document.createElement('div'); opts.className = 'opts';
+      const why = document.createElement('div'); why.className = 'why'; why.hidden = true;
+      m.o.forEach((t, oi) => {
+        const b = document.createElement('button');
+        b.textContent = String.fromCharCode(65+oi) + '. ' + t;
+        b.addEventListener('click', () => {
+          if(opts.dataset.locked) return;
+          opts.dataset.locked = '1';
+          const st = loadQ();
+          let ok;
+          if(multi){
+            // 多选：点一次确认一个选项，选完与答案比对
+            opts.querySelectorAll('button').forEach((bb,k) => {
+              bb.disabled = true;
+              if(m.a.includes(k)) bb.classList.add('right');
+            });
+            if(!m.a.includes(oi)){ opts.querySelectorAll('button')[oi].classList.add('wrong'); }
+            ok = m.a.includes(oi);
+          } else {
+            opts.querySelectorAll('button').forEach((bb,k) => {
+              bb.disabled = true;
+              if(k === m.a) bb.classList.add('right');
+              else if(k === oi) bb.classList.add('wrong');
+            });
+            ok = (oi === m.a);
+          }
+          st[id] = ok ? 1 : 0; saveQ(st);
+          why.hidden = false;
+          updateScore();
+        });
+        opts.appendChild(b);
+      });
+      q.appendChild(head); q.appendChild(opts); q.appendChild(why);
+      area.appendChild(q);
+      // 恢复历史作答
+      const st = loadQ();
+      if(id in st){
+        opts.dataset.locked = '1';
+        opts.querySelectorAll('button').forEach((bb,k) => {
+          bb.disabled = true;
+          if(multi ? m.a.includes(k) : k === m.a) bb.classList.add('right');
+        });
+        why.hidden = false;
+      }
+    });
+  }
+
+  function updateScore(){
+    const st = loadQ();
+    let done = 0, correct = 0;
+    const total = MCQ.length + MULTI.length;
+    MCQ.forEach((m,i) => { if(('s'+i) in st){ done++; correct += st['s'+i]; } });
+    MULTI.forEach((m,i) => { if(('m'+i) in st){ done++; correct += st['m'+i]; } });
+    const score = correct * 2;
+    document.getElementById('mcqScore').textContent = score;
+    document.getElementById('mcqDone').textContent = `已做 ${done} / ${total} 题`;
+    document.getElementById('mcqBar').style.width = Math.round(done/total*100) + '%';
+  }
+
+  function resetQuiz(){
+    if(!confirm('确定重做全部真题吗？将清空本题作答记录（不影响章节题库的「已掌握」）。')) return;
+    const st = loadQ();
+    Object.keys(st).forEach(k => { if(k[0] === 's' || k[0] === 'm') delete st[k]; });
+    saveQ(st);
+    document.getElementById('zhenti2024').querySelectorAll('.opts').forEach(o => {
+      delete o.dataset.locked;
+      o.querySelectorAll('button').forEach(b => { b.disabled = false; b.classList.remove('right','wrong'); });
+    });
+    document.querySelectorAll('#zhenti2024 .why').forEach(w => w.hidden = true);
+    updateScore();
+  }
+
+  buildChoice(document.getElementById('mcqArea'), MCQ, false);
+  buildChoice(document.getElementById('multiArea'), MULTI, true);
+  updateScore();
+
+  /* ================= 2018 回忆版渲染 ================= */
+  (function(){
+    const area = document.getElementById('paper2018');
+    PAPER2018.forEach(block => {
+      const label = document.createElement('p');
+      label.innerHTML = `<span class=&quot;tag ${block.t === '简答题' ? 't-lo' : 't-mid'}&quot;>${block.t}</span>`;
+      label.style.margin = '14px 0 8px';
+      area.appendChild(label);
+      block.items.forEach(item => {
+        const q = document.createElement('div'); q.className = 'q';
+        const head = document.createElement('div'); head.className = 'q-text'; head.textContent = item.q;
+        const btn = document.createElement('button'); btn.className = 'reveal-btn'; btn.textContent = '看参考答题要点';
+        const ans = document.createElement('div'); ans.className = 'model-ans'; ans.hidden = true; ans.textContent = item.a;
+        btn.addEventListener('click', () => { ans.hidden = !ans.hidden; btn.textContent = ans.hidden ? '看参考答题要点' : '收起要点'; });
+        q.appendChild(head); q.appendChild(btn); q.appendChild(ans);
+        area.appendChild(q);
+      });
+    });
+  })();
+
+  /* ================= 章节题库渲染 ================= */
+  (function(){
+    const wrap = document.getElementById('chapters');
+    CHAPTERS.forEach((ch, ci) => {
+      const det = document.createElement('details'); det.className = 'chapter';
+      const sum = document.createElement('summary');
+      sum.innerHTML = `<span><span class=&quot;ch-title&quot;>${ch.ch}</span><br><span class=&quot;tag t-aux&quot;>${ch.qs.length} 题</span><span class=&quot;tag t-main&quot;>课后习题精选</span></span><span class=&quot;arrow&quot;>▸</span>`;
+      det.appendChild(sum);
+      const body = document.createElement('div'); body.className = 'ch-body';
+      const src = document.createElement('p'); src.className = 'hint'; src.textContent = '出处：' + ch.src; src.style.margin = '6px 0 10px';
+      body.appendChild(src);
+      ch.qs.forEach((item, qi) => {
+        const q = document.createElement('div'); q.className = 'q';
+        const head = document.createElement('div'); head.className = 'q-text';
+        head.innerHTML = `<span class=&quot;tag ${item.t === '计算' ? 't-hi' : 't-lo'}&quot;>${item.t}</span>${qi+1}. ${item.q}`;
+        const btn = document.createElement('button'); btn.className = 'reveal-btn'; btn.textContent = '先自己想，再看参考答案';
+        const ans = document.createElement('div'); ans.className = 'model-ans'; ans.hidden = true; ans.textContent = item.a;
+        btn.addEventListener('click', () => { ans.hidden = !ans.hidden; btn.textContent = ans.hidden ? '先自己想，再看参考答案' : '收起答案'; });
+        q.appendChild(head); q.appendChild(btn); q.appendChild(ans);
+        body.appendChild(q);
+      });
+      // 已掌握开关（按章）
+      const mid = 'c' + ci;
+      const master = document.createElement('div'); master.className = 'master';
+      master.innerHTML = `<span class=&quot;mcb&quot;></span><span class=&quot;mtext&quot;>本章题已全部过一遍，标记为「已掌握」</span>`;
+      master.addEventListener('click', () => {
+        const st = loadQ();
+        st[mid] = st[mid] ? 0 : 1;
+        saveQ(st); refreshMasters();
+      });
+      body.appendChild(master);
+      det.appendChild(body);
+      wrap.appendChild(det);
+    });
+    refreshMasters();
+  })();
+
+  function refreshMasters(){
+    const st = loadQ();
+    document.querySelectorAll('#chapters .master').forEach((m, ci) => {
+      m.classList.toggle('on', !!st['c'+ci]);
+    });
+    const n = CHAPTERS.filter((_, ci) => st['c'+ci]).length;
+    document.querySelectorAll('#chapters .chapter')[0];
+  }
+</script>
+<script>window.addEventListener('load',function(){var f=function(){parent.postMessage({tikuHeight:document.documentElement.scrollHeight},'*')};f();setTimeout(f,600);setTimeout(f,1500);window.addEventListener('resize',f);});</script></body>
+</html>
+"></iframe>
+</section>
+</main>
+
+<footer data-page-node-id="v5zZdwymk5vP4lvjxuiHh1">
+  <p data-page-node-id="O0gXTR9FuPaWTbLTGnSi15">愿所有的深夜刷题，都变成录取通知上的名字。<span class="heart" data-page-node-id="D4K65nqI0jm4xnyCseTgfa">♥</span></p>
+  <p style="margin-top:6px" data-page-node-id="COOj6TDI4EAkBdUHIaKCzo">826 工程项目管理 · 上岸手册 · 2027 大纲版</p>
+</footer>
+
+<script>
+  const KEY = 'wit826-checklist';
+  const chapters = document.querySelectorAll('.chapter');
+  function load(){ try{ return JSON.parse(localStorage.getItem(KEY)) || {}; }catch(e){ return {}; } }
+  function save(d){ localStorage.setItem(KEY, JSON.stringify(d)); }
+  function refresh(){
+    const d = load();
+    let n = 0;
+    chapters.forEach(c => {
+      const on = !!d[c.dataset.ch];
+      c.classList.toggle('done', on);
+      if(on) n++;
+    });
+    const pct = Math.round(n / chapters.length * 100);
+    document.getElementById('pct').textContent = pct + '%';
+    document.getElementById('count').textContent = `已完成 ${n} / ${chapters.length} 章`;
+    document.getElementById('barFill').style.width = pct + '%';
+  }
+  function resetAll(){
+    if(confirm('确定清空所有打卡记录吗？')){ save({}); refresh(); }
+  }
+  // 事件只绑定一次，refresh 只负责刷新显示
+  chapters.forEach(c => {
+    c.querySelector('.cb').addEventListener('click', e => {
+      e.preventDefault(); e.stopPropagation();
+      const cur = load(); cur[c.dataset.ch] = !cur[c.dataset.ch]; save(cur); refresh();
+    });
+  });
+  refresh();
+
+  /* ================= 每章练习题 ================= */
+  const QUESTIONS = {
+    1: {
+      mcq: [
+        { q:"下列哪一项【不属于】工程项目的特点？", o:["单件性（一次性）","地点固定性","可重复批量生产","整体性"], a:2, why:"工程项目是独一无二的，具有单件性、固定性、整体性等特点，不具备工业品那样的可重复性。" },
+        { q:"项目管理的核心任务是（　）。", o:["合同管理","目标控制","信息管理","组织协调"], a:1, why:"项目管理的核心任务是项目的目标控制，即进度、质量、投资（成本）三大目标的控制。" }
+      ],
+      short: { q:"简述工程项目管理的主要类型。", a:"按参与方划分：①业主方的项目管理（覆盖全过程，是管理的核心）；②设计方的项目管理；③施工方的项目管理；④供货方的项目管理；⑤工程总承包方的项目管理。此外还有使用方（物业）的项目管理。答题时先分类、再点明业主方是核心。" }
+    },
+    2: {
+      mcq: [
+        { q:"每一个工作部门只有一个指令源的组织结构模式是（　）。", o:["职能组织结构","线性组织结构","矩阵组织结构","项目承包商结构"], a:1, why:"线性组织结构指令源唯一，可避免矛盾指令；职能组织结构每个部门可能收到多个上级的指令；矩阵结构有纵、横两个指令源。" },
+        { q:"在矩阵组织结构中，每一个工作部门的指令源通常有（　）。", o:["1 个","2 个","3 个","没有指令源"], a:1, why:"矩阵组织结构中，工作部门同时受纵向（职能部门）和横向（项目）两个指令源作用，实际运行中需通过制度明确以哪个为主。" }
+      ],
+      short: { q:"简述三种常见组织结构模式及各自的特点。", a:"①职能组织结构：传统模式，可发挥职能专业化优势，但存在多头指令、矛盾指令的缺陷；②线性组织结构：指令源唯一、指挥清晰，适用于中小型项目，但跨部门协调困难；③矩阵组织结构：适用于大型项目，灵活性强，但必须明确纵横两个指令的主次关系，否则产生矛盾指令。" }
+    },
+    3: {
+      mcq: [
+        { q:"项目决策期策划的主要任务是（　）。", o:["确定实施阶段组织结构","项目定义与项目目标论证","选择施工方案","组织竣工验收"], a:1, why:"决策期策划的核心是对项目进行定义（建什么）并论证项目目标（功能、规模、标准），为立项决策服务；实施期策划才涉及组织与实施方法。" },
+        { q:"下列【不属于】项目实施期策划内容的是（　）。", o:["组织策划","经济策划","技术策划","企业长期战略规划"], a:3, why:"实施期策划主要包括组织策划、管理策划、经济策划、技术策划、目标控制策划等；企业战略规划属于企业层面的决策内容。" }
+      ],
+      short: { q:"简述项目实施策划的主要内容。", a:"①组织策划：组织结构、任务分工与管理职能分工；②管理策划：项目管理任务与管理方法；③经济策划：资金需求量分析与筹措方案；④技术策划：技术方案与技术标准论证；⑤目标控制策划：进度、质量、投资（成本）目标的控制方案设计。" }
+    },
+    4: {
+      mcq: [
+        { q:"运用动态控制原理控制项目目标，其第一步是（　）。", o:["收集项目目标的实际值","对目标进行分解，确定计划值","将计划值与实际值比较","采取纠偏措施"], a:1, why:"动态控制的步骤：①目标分解、确定计划值；②收集实际值；③定期比较计划值与实际值；④发现偏差采取纠偏措施，如此循环。" },
+        { q:"纠偏措施中，『调整任务分工和管理职能分工』属于（　）。", o:["组织措施","管理措施","经济措施","技术措施"], a:0, why:"组织措施包括调整组织结构、任务分工、管理职能分工、工作流程组织和人员安排等，是纠偏的首要措施。" }
+      ],
+      short: { q:"简述项目目标动态控制的纠偏措施有哪些。", a:"①组织措施：调整组织结构、任务分工、管理职能分工、工作流程组织和项目管理班子人员；②管理措施（含合同措施）：调整管理方法与手段、改变施工管理方式、强化合同管理等；③经济措施：落实资金、调整资金使用计划等；④技术措施：改进施工方法、更换材料设备、优化设计方案等。" }
+    },
+    5: {
+      mcq: [
+        { q:"业主委托设计单位完成全部设计后，再通过施工招标选择施工承包商，这种采购模式是（　）。", o:["DBB 模式","DB 模式","EPC 模式","CM 模式"], a:0, why:"DBB（设计-招标-建造）是传统模式：设计完成后再招标施工，业主需分别与设计和施工单位签约，管理与协调工作量大。" },
+        { q:"EPC 模式中，总承包商承担的责任范围是（　）。", o:["仅施工","设计＋施工","设计＋采购＋施工","全过程工程咨询"], a:2, why:"EPC＝Engineering（设计）＋Procurement（采购）＋Construction（施工），即设计采购施工总承包，俗称交钥匙工程。" }
+      ],
+      short: { q:"简述 CM 模式『快速路径法』的基本思想。", a:"将工程项目分阶段设计、分阶段招标、分阶段施工，使设计与施工合理搭接（上一部分设计完成即开始施工，同时进行下一部分设计），从而缩短建设周期。CM 单位在设计早期即介入，提供进度、成本等方面的咨询服务；按合同关系分为代理型（CM 单位仅提供咨询管理）和非代理型（CM 单位直接承担施工任务）两种。" }
+    },
+    6: {
+      mcq: [
+        { q:"工程项目投资控制的重点应放在（　）。", o:["施工阶段","设计阶段（施工以前）","竣工结算阶段","维修使用阶段"], a:1, why:"项目决策与设计阶段对投资的影响程度最大（设计阶段影响投资的可能幅度可达 70% 以上），因此投资控制的重点应在施工以前的设计阶段。" },
+        { q:"设计阶段控制投资的有效技术方法是（　）。", o:["限额设计与价值工程","延长工期","降低质量标准","增加暂列金额"], a:0, why:"限额设计按批准的投资限额控制设计，并通过价值工程（V=F/C）对设计方案做技术经济分析与优化，是设计阶段投资控制的主要方法。" }
+      ],
+      short: { q:"简述价值工程的基本原理及其在投资控制中的应用。", a:"价值工程以价值 V＝功能 F／成本 C 为基本原理，通过对产品（方案）进行功能分析，在保证必要功能的前提下剔除不必要功能、降低成本或提高功能，从而提升价值。应用于设计阶段：对多方案做功能评价与成本分析，选价值最高的方案；对部件做功能成本匹配，找出成本偏高、功能过剩的改进对象。" }
+    },
+    7: {
+      mcq: [
+        { q:"【计算】某双代号网络计划：起点→A（3 天）；A→B（5 天）→终点；A→C（2 天）→D（6 天）→终点。该计划的总工期为（　）。", o:["8 天","10 天","11 天","13 天"], a:2, why:"工期由持续时间最长的线路决定：A→B 线路＝3+5＝8 天；A→C→D 线路＝3+2+6＝11 天，故总工期 11 天，A→C→D 为关键线路。" },
+        { q:"双代号网络计划中，关键线路是指（　）。", o:["工作数量最多的线路","总持续时间最长的线路","资源消耗最多的线路","费用最高的线路"], a:1, why:"关键线路是总持续时间最长的线路，它决定项目工期；关键线路上的工作为关键工作，其总时差为零。" }
+      ],
+      short: { q:"简述『总时差』的含义及其作用。", a:"总时差（TF）指在不影响总工期的前提下，一项工作可以利用的最大机动时间，TF＝最迟开始时间－最早开始时间。作用：①总时差为零（或最小）的工作为关键工作，由此确定关键线路；②总时差是进度优化的依据，可利用非关键工作的时差调配资源、平衡工期；③实际进度拖延超过总时差时，将影响总工期，必须纠偏。" }
+    },
+    8: {
+      mcq: [
+        { q:"【计算】某项目费用检查时：PV＝100 万，EV＝90 万，AC＝110 万。成本偏差 CV 为（　）。", o:["-20 万","-10 万","+20 万","+10 万"], a:0, why:"CV＝EV－AC＝90－110＝－20 万，CV 为负表示成本超支 20 万；同时 SV＝EV－PV＝－10 万，进度也落后。" },
+        { q:"接上题，该项目的进度状况为（　）。", o:["进度提前","进度落后","进度正常","无法判断"], a:1, why:"SV＝EV－PV＝90－100＝－10 万＜0（或 SPI＝EV/PV＝0.9＜1），说明实际完成的工作量低于计划，进度拖延。" }
+      ],
+      short: { q:"写出挣值法三个基本参数和四个评价指标的计算式，并说明其判断规则。", a:"基本参数：PV（计划工作预算费用）、EV（已完工作预算费用）、AC（已完工作实际费用）。评价指标：①CV＝EV－AC，＜0 成本超支；②SV＝EV－PV，＜0 进度拖延；③CPI＝EV/AC，＜1 成本超支；④SPI＝EV/PV，＜1 进度拖延。答题时先写参数定义，再写公式，最后写判别方向，形成完整闭环。" }
+    },
+    9: {
+      mcq: [
+        { q:"质量管理体系运行遵循的基本循环方法是（　）。", o:["5W1H","PDCA 循环","SWOT 分析","WBS 分解"], a:1, why:"PDCA（计划—实施—检查—处置）循环是质量管理的基本方法，体系按此循环运转并持续改进。" },
+        { q:"施工现场安全管理应贯彻的方针是（　）。", o:["效率优先、兼顾安全","安全第一、预防为主、综合治理","质量第一、进度优先","成本最低化"], a:1, why:"我国安全生产工作的基本方针是『安全第一、预防为主、综合治理』，安全管理重在事前预防和系统治理。" }
+      ],
+      short: { q:"简述工程项目质量管理体系的建立与运行要点。", a:"建立：①确定质量方针和质量目标；②组织落实，明确质量职责与分工；③编制质量手册、程序文件等体系文件；④配置资源并进行人员培训。运行：按 PDCA 循环开展质量策划、质量控制、质量保证与质量改进，通过内部审核、过程监控和数据反馈持续改进体系的有效性。" }
+    },
+    10: {
+      mcq: [
+        { q:"建设工程施工合同文件发生歧义时，解释顺序优先级最高的是（　）。", o:["中标通知书","投标函及投标函附录","合同协议书","专用合同条款"], a:2, why:"通用解释顺序大致为：合同协议书＞中标通知书＞投标函及附录＞专用合同条款＞通用合同条款＞技术标准和要求＞图纸＞已标价工程量清单。" },
+        { q:"索赔成立的前提条件【不包括】（　）。", o:["与合同对照，事件已造成承包人实际损失","损失原因按合同约定不属于承包人的责任","承包人按合同规定程序提交了索赔意向","承包人预期利润没有达到"], a:3, why:"索赔成立的三要件：与合同对照存在索赔依据、造成了实际的损失或损害、损失非承包人自身责任且按程序提出。『利润没达到预期』本身不构成索赔理由。" }
+      ],
+      short: { q:"简述承包人索赔的一般流程。", a:"①索赔事件发生后 28 天内，向监理人发出索赔意向通知书；②持续收集证据、做好同期记录；③发出意向通知后 28 天内（或监理同意的合理期限内）提交正式索赔报告（含索赔依据、款项与工期计算）；④监理人审核并答复，必要时要求补充材料；⑤双方协商达成一致；协商不成可按合同约定申请调解或仲裁/诉讼。" }
+    },
+    11: {
+      mcq: [
+        { q:"风险量的大小取决于（　）。", o:["仅取决于损失量","风险发生概率与潜在损失量的组合","仅取决于发生概率","管理者的风险偏好"], a:1, why:"风险量反映风险的大小，是风险发生概率与该事件潜在损失量的函数；概率越高、损失越大，风险量越大。" },
+        { q:"下列【不属于】常用风险应对策略的是（　）。", o:["风险规避","风险减轻","风险自留","风险放大"], a:3, why:"常用应对策略：规避（放弃或改变方案）、减轻（降低概率或损失）、转移（保险、分包等）、自留（预留风险费用）；『放大』显然不是应对策略。" }
+      ],
+      short: { q:"简述常用的风险识别方法。", a:"①专家调查法（含头脑风暴法、德尔菲法）；②财务报表法；③流程图法；④初始风险清单法；⑤现场调查法与经验数据法。答题思路：先列举方法，再各用一句话说明其要点。" }
+    },
+    12: {
+      mcq: [
+        { q:"我国《招标投标法》框架下常用的评标方法是（　）。", o:["经验评估法","抽签法","经评审的最低投标价法和综合评估法","一律最低价中标"], a:2, why:"法律规定的评标方法主要有两种：经评审的最低投标价法（适用于技术、性能标准统一的通用项目）和综合评估法（对技术、商务、报价综合打分）。" },
+        { q:"招标文件的编制依据【不包括】（　）。", o:["招标项目的特点和需要","国家有关招标投标的规定","投标人之间的私下约定","项目设计文件与标准"], a:2, why:"招标文件应依据项目特点、国家规定、设计文件与技术标准等编制；任何投标人之间的私下约定都是违法的。" }
+      ],
+      short: { q:"简述工程项目采购评标的一般流程。", a:"①开标：按招标文件规定的时间、地点公开进行；②初步评审：符合性、完整性审查，淘汰不合格投标；③详细评审：按评标办法对技术标和商务标打分或评审；④必要时澄清、说明或补正；⑤评标委员会推荐中标候选人并提交评标报告；⑥公示中标候选人、确定中标人；⑦发出中标通知书并在 30 日内签订合同。" }
+    },
+    13: {
+      mcq: [
+        { q:"项目信息管理的基本目的是（　）。", o:["收集尽可能多的信息","通过信息传输的组织与管理，为项目目标控制服务","代替管理人员进行决策","建立企业门户网站"], a:1, why:"信息管理不是为收集而收集，而是通过对信息的组织、传输与共享，支持决策和目标的控制。" },
+        { q:"BIM 的中文含义是（　）。", o:["建筑信息模型","工程量清单计价","建设项目管理信息系统","施工组织设计"], a:0, why:"BIM（Building Information Modeling，建筑信息模型）以三维数字模型集成设计、施工、运维全过程信息，实现可视化协同，是当前工程项目信息管理的重要发展方向。" }
+      ],
+      short: { q:"简述项目管理信息系统（PMIS）的基本功能结构。", a:"PMIS 以项目目标控制为主线，基本功能包括：①数据采集与存储（进度、成本、质量、合同等原始数据）；②信息加工与分析（进度比较、成本核算、统计分析）；③报表与文档管理（自动生成报表、收发文与档案管理）；④多方协同与信息交流（业主、设计、施工、监理共享平台）。核心价值：统一数据口径，提高信息传输效率，支撑目标控制决策。" }
+    }
+  };
+
+  function renderQuizzes(){
+    document.querySelectorAll('.chapter').forEach(ch => {
+      const data = QUESTIONS[ch.dataset.ch]; if(!data) return;
+      const body = ch.querySelector('.ch-body'); if(!body) return;
+      const qz = document.createElement('div'); qz.className = 'quiz';
+      qz.innerHTML = '<div class="quiz-title">✍ 练一练（点选项立刻判对错）</div>';
+      data.mcq.forEach((m, qi) => {
+        const q = document.createElement('div'); q.className = 'q';
+        const head = document.createElement('div'); head.className = 'q-text';
+        head.textContent = (qi+1) + '. ' + m.q;
+        const opts = document.createElement('div'); opts.className = 'opts';
+        const why = document.createElement('div'); why.className = 'why'; why.hidden = true;
+        m.o.forEach((t, oi) => {
+          const b = document.createElement('button');
+          b.textContent = String.fromCharCode(65+oi) + '. ' + t;
+          b.addEventListener('click', () => {
+            opts.querySelectorAll('button').forEach((bb, k) => {
+              bb.disabled = true;
+              if(k === m.a) bb.classList.add('right');
+              else if(k === oi) bb.classList.add('wrong');
+            });
+            why.hidden = false;
+          });
+          opts.appendChild(b);
+        });
+        q.appendChild(head); q.appendChild(opts); q.appendChild(why);
+        qz.appendChild(q);
+      });
+      if(data.short){
+        const q = document.createElement('div'); q.className = 'q';
+        const head = document.createElement('div'); head.className = 'q-text';
+        head.textContent = '简答. ' + data.short.q;
+        const btn = document.createElement('button'); btn.className = 'reveal-btn'; btn.textContent = '先自己想，再看参考答案';
+        const ans = document.createElement('div'); ans.className = 'model-ans'; ans.hidden = true; ans.textContent = data.short.a;
+        btn.addEventListener('click', () => { ans.hidden = !ans.hidden; btn.textContent = ans.hidden ? '先自己想，再看参考答案' : '收起答案'; });
+        q.appendChild(head); q.appendChild(btn); q.appendChild(ans);
+        qz.appendChild(q);
+      }
+      body.appendChild(qz);
+    });
+  }
+  renderQuizzes();
+
+  /* ================= 今日打卡 ================= */
+  const QUOTES = [
+    ["📚", "你翻过的每一页书，都会变成考场上的底气。"],
+    ["🌱", "别怕进度慢，种一棵树最好的时间是十年前，其次是现在。"],
+    ["💪", "上岸的人不是最聪明的，是坐得住的。"],
+    ["⭐", "今天多背一个考点，明年这个时候你就在杭州的研究生宿舍里了。"],
+    ["🌅", "能控制早晨的人，才能控制人生。今天也请早点开始。"],
+    ["🔥", "熬得住，出众；熬不住，出局。你正在熬的路上。"],
+    ["🚶", "不必和别人比进度，和昨天的自己比就够了。"],
+    ["🌙", "深夜的台灯不会白亮，它照着你一点点靠近梦想。"],
+    ["🎯", "目标就在那里：264 分。拆到每一天，其实没有那么多。"],
+    ["📝", "写真题的意义不是分数，是提前见一遍考场上的自己。"],
+    ["🍂", "秋天把该做的做了，冬天自然会有结果。"],
+    ["✨", "所有让你变好的选择，过程都不会太舒服。坚持住。"],
+    ["🧩", "不会的题别慌，那正是提分的地方。"],
+    ["☕", "累了就休息一下，休息不是放弃，是为了走更远。"],
+    ["🏔️", "翻过这座山，前面就是你想去的地方。"],
+    ["🛤️", "现在流的每一滴汗，都是给未来的自己铺路。"],
+    ["📖", "背了忘、忘了背很正常，重复是记忆之母。"],
+    ["🚀", "按自己的节奏走，你不需要活成别人的样子。"],
+    ["🏁", "考研就像项目进度管理：计划、执行、检查、纠偏。今天你也完成了一个循环。"],
+    ["💭", "十年后的你会感谢今天没放弃的自己。"],
+    ["🌊", "水滴石穿不是水的力量，是坚持的力量。"],
+    ["🔭", "把大目标拆成小任务，每天完成一件，就是了不起的一天。"],
+    ["🍀", "运气藏在努力里，你的好运正在路上。"],
+    ["🌅", "黎明前的黑暗最难熬，但天一定亮。"],
+    ["🎀", "你已经比大多数人走得更远了，请一定走到底。"],
+    ["🕰️", "距初试还有五十多天，每一天都算数。"],
+    ["📮", "明年三月的拟录取名单上，会有你的名字。"],
+    ["🧸", "先搞个 826 满分试试？150 分就考 13 章而已。"]
+  ];
+  const CK_KEY = 'wit826-checkin';
+  function loadCk(){ try{ return JSON.parse(localStorage.getItem(CK_KEY)) || {}; }catch(e){ return {}; } }
+  function saveCk(d){ localStorage.setItem(CK_KEY, JSON.stringify(d)); }
+  function todayStr(){ const t = new Date(); return t.getFullYear() + '-' + String(t.getMonth()+1).padStart(2,'0') + '-' + String(t.getDate()).padStart(2,'0'); }
+  function yesterdayStr(){ const t = new Date(Date.now() - 86400000); return t.getFullYear() + '-' + String(t.getMonth()+1).padStart(2,'0') + '-' + String(t.getDate()).padStart(2,'0'); }
+
+  // 弹窗（一次性注入）
+  document.body.insertAdjacentHTML('beforeend',
+    '<div class="modal-mask" id="checkinMask" onclick="if(event.target===this)this.classList.remove(\'show\')">' +
+    '  <div class="modal-card">' +
+    '    <div class="emoji" id="ckEmoji">⭐</div>' +
+    '    <div class="quote" id="ckQuote"></div>' +
+    '    <div class="streak-line" id="ckStreak"></div>' +
+    '    <button class="close-btn" onclick="document.getElementById(\'checkinMask\').classList.remove(\'show\')">继续加油 →</button>' +
+    '  </div>' +
+    '</div>');
+
+  function updateCheckinUI(){
+    const d = loadCk();
+    const isToday = d.last === todayStr();
+    const btn = document.getElementById('checkinBtn');
+    const st = document.getElementById('streakText');
+    if(isToday){
+      btn.textContent = '✅ 今日已打卡';
+      btn.classList.add('done');
+    } else {
+      btn.textContent = '🗓️ 今日打卡';
+      btn.classList.remove('done');
+    }
+    if(d.streak && d.streak > 0){
+      st.hidden = false;
+      document.getElementById('streakNum').textContent = d.streak;
+    }
+  }
+
+  function doCheckin(){
+    const d = loadCk();
+    const today = todayStr();
+    let msg = '';
+    if(d.last === today){
+      msg = '今天已经打过卡啦，坚持的人运气都不会差。再送你一句：';
+    } else {
+      d.streak = (d.last === yesterdayStr()) ? (d.streak || 0) + 1 : 1;
+      d.last = today;
+      saveCk(d);
+      if(d.streak === 1) msg = '新的一天，新的开始。今天的第一句鼓励：';
+      else msg = `连续打卡 ${d.streak} 天了，了不起！今天送你：`;
+    }
+    updateCheckinUI();
+    // 随机抽一句，避免和上一次重复
+    let idx = Math.floor(Math.random() * QUOTES.length);
+    if(QUOTES.length > 1 && idx === (d.lastIdx || -1)) idx = (idx + 1) % QUOTES.length;
+    d.lastIdx = idx; saveCk(d);
+    document.getElementById('ckEmoji').textContent = QUOTES[idx][0];
+    document.getElementById('ckQuote').textContent = QUOTES[idx][1];
+    document.getElementById('ckStreak').textContent = msg;
+    document.getElementById('checkinMask').classList.add('show');
+  }
+  updateCheckinUI();
+</script>
+<script>
+window.addEventListener('message', function(e){
+  var d = e.data || {};
+  if(d.tikuHeight){ var f = document.getElementById('tikuFrame'); if(f) f.style.height = (d.tikuHeight + 60) + 'px'; }
+  if(d.tikuTop){ window.scrollTo({top:0, behavior:'smooth'}); }
+});
+</script>
+</body>
+</html>
